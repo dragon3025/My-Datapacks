@@ -1,0 +1,12 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"dimension": "minecraft:the_nether",
+		"light": {
+			"light": {
+				"min": 12,
+				"max": 15
+			}
+		}
+	}
+}

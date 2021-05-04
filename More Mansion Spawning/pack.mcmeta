@@ -1,0 +1,6 @@
+{
+        "pack": {
+                "pack_format": 6,
+                "description": "Spawns mansions in every roof forest at coordinates that are a multiple of 250."
+        }
+}

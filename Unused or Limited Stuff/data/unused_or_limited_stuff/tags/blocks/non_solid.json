@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:banners",
+    "#minecraft:bee_growables",
+    "#minecraft:buttons",
+    "#minecraft:carpets",
+    "#minecraft:flowers",
+    "#minecraft:impermeable",
+    "#minecraft:rails",
+    "#minecraft:saplings",
+    "#minecraft:signs",
+    "#minecraft:underwater_bonemeals",
+    "#minecraft:wooden_pressure_plates",
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:glass",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:lever",
+    "minecraft:light_weighted_pressure_plate",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wire",
+    "minecraft:scaffolding",
+    "minecraft:stone_pressure_plate",
+    "minecraft:torch",
+    "minecraft:tripwire",
+    "minecraft:twisting_vines",
+    "minecraft:twisting_vines_plant",
+    "minecraft:vine",
+    "minecraft:weeping_vines",
+    "minecraft:weeping_vines_plant"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+        "pack": {
+                "pack_format": 6,
+                "description": "Exit the Wandering Trader menu, to re-open locked trades."
+        }
+}

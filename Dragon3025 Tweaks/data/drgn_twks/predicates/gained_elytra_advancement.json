@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "location": {
+            "feature": "minecraft:endcity"
+        },
+        "player": {
+            "advancements": {
+                "minecraft:end/elytra": true
+            }
+        }
+    }
+}

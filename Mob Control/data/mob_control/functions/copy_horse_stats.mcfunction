@@ -1,0 +1,3 @@
+data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @e[type=minecraft:horse,nbt={Tame:1b},limit=1,sort=nearest] Attributes[{Name:"minecraft:generic.max_health"}].Base
+data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from entity @e[type=minecraft:horse,nbt={Tame:1b},limit=1,sort=nearest] Attributes[{Name:"minecraft:generic.movement_speed"}].Base
+data modify entity @s Attributes[{Name:"minecraft:horse.jump_strength"}].Base set from entity @e[type=minecraft:horse,nbt={Tame:1b},limit=1,sort=nearest] Attributes[{Name:"minecraft:horse.jump_strength"}].Base
