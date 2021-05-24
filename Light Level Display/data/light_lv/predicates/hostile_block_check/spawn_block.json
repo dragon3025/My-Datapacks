@@ -32,7 +32,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:banners"
+					"tag": "minecraft:banners"
 				}
 			}
 		},
