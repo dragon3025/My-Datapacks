@@ -1,9 +1,9 @@
 #Menu
 execute as @a[scores={spawn_block_menu=1}] run function spawn_blockers:spawn_blocker_menu
-scoreboard players set @s[scores={spawn_block_menu=2}] spwn_blcker_set 1
-scoreboard players set @s[scores={spawn_block_menu=3}] anti_s_blckr_set 1
-scoreboard players set @s[scores={spawn_block_menu=4}] spwn_blcker_find 1
-scoreboard players set @s[scores={spawn_block_menu=5}] spwn_blckr_gui 1
+scoreboard players set @a[scores={spawn_block_menu=2}] spwn_blcker_set 1
+scoreboard players set @a[scores={spawn_block_menu=3}] anti_s_blckr_set 1
+scoreboard players set @a[scores={spawn_block_menu=4}] spwn_blcker_find 1
+scoreboard players set @a[scores={spawn_block_menu=5}] spwn_blckr_gui 1
 
 #Create Spawn Blocker
 execute as @a[scores={spwn_blcker_set=1..}] at @s run function spawn_blockers:try_to_create_spawn_blocker
@@ -16,11 +16,7 @@ execute as @e[type=#raiders] store result score @s raider_wave_num run data get 
 tag @e[scores={raider_wave_num=1..}] add safe_from_spawn_blocker
 
 #Anti Spawn Blocker
-execute as @e[tag=anti_spawn_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @e[type=#spawn_blockers:hostile, dx=16, dy=16, dz=16] add safe_from_spawn_blocker
-execute as @e[tag=anti_spawn_blocker] run data merge entity @s {Duration:1000000000}
-execute as @e[tag=anti_spawn_blocker] at @s unless block ~ ~ ~ #spawn_blockers/air_or_water run tellraw @p {"text": "Anti Spawn Blocker Removed", "color": "yellow"}
-execute as @e[tag=anti_spawn_blocker] at @s unless block ~ ~ ~ #spawn_blockers/air_or_water run kill @s
-execute as @e[tag=anti_spawn_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @a[scores={spwn_blcker_find=1}, dx=16, dy=16, dz=16] add anti_spawn_blocker_detected
+execute as @e[tag=anti_spawn_blocker] at @s run function spawn_blockers:anti_spawn_blocker
 
 #Spawn Blocker
 execute as @e[tag=spawn_blocker] at @s run function spawn_blockers:spawn_blocker
