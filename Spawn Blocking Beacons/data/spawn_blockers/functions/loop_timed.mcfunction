@@ -1,65 +1,58 @@
-#Create Despawner
-execute as @a[scores={dspn_beacon_set=1..}] at @s run function spawn_blockers:try_to_create_despawner
+#Menu
+execute as @a[scores={spawn_block_menu=1}] run function spawn_blockers:spawn_blocker_menu
+scoreboard players set @s[scores={spawn_block_menu=2}] spwn_blcker_set 1
+scoreboard players set @s[scores={spawn_block_menu=3}] anti_s_blckr_set 1
+scoreboard players set @s[scores={spawn_block_menu=4}] spwn_blcker_find 1
+scoreboard players set @s[scores={spawn_block_menu=5}] spwn_blckr_gui 1
 
-#Create Despawn Blocker
-execute as @a[scores={d_beac_blckr_set=1..}] at @s run function spawn_blockers:try_to_create_despawn_blocker
+#Create Spawn Blocker
+execute as @a[scores={spwn_blcker_set=1..}] at @s run function spawn_blockers:try_to_create_spawn_blocker
 
-#Remove Despawner
-execute as @a[scores={dspn_beacn_unset=1}] at @s run tellraw @s {"text": "As a saftey measure, use '/trigger dspn_beacn_unset set 2'", "color": "red"}
-execute as @a[scores={dspn_beacn_unset=2}] at @s unless entity @e[tag=despawning_beacon, distance=..1, sort=nearest, limit=1] run tellraw @s {"text": "You must stand on a Despawning Beacon to remove it", "color": "red"}
-execute as @a[scores={dspn_beacn_unset=2}] at @s run execute as @e[tag=despawning_beacon, distance=..1, sort=nearest, limit=1] run tellraw @p {"text": "Despawner Removed", "color": "red"}
-execute as @a[scores={dspn_beacn_unset=2}] at @s run execute as @e[tag=despawning_beacon, distance=..1, sort=nearest, limit=1] run kill @s
+#Create Anti Spawn Blocker
+execute as @a[scores={anti_s_blckr_set=1..}] at @s run function spawn_blockers:try_to_create_anti_spawn_blocker
 
-#Remove Despawn Blocker
-execute as @a[scores={d_bc_blckr_unset=1}] at @s run tellraw @s {"text": "As a saftey measure, use '/trigger d_bc_blckr_unset set 2'", "color": "red"}
-execute as @a[scores={d_bc_blckr_unset=2}] at @s unless entity @e[tag=despawning_beacon_blocker, distance=..1] run tellraw @s {"text": "You must stand on a Despawning Beacon Blocker to remove it", "color": "red"}
-execute as @a[scores={d_bc_blckr_unset=2}] at @s run execute as @e[tag=despawning_beacon_blocker, distance=..1, sort=nearest, limit=1] run tellraw @p {"text": "Despawn Blocker Removed", "color": "yellow"}
-execute as @a[scores={d_bc_blckr_unset=2}] at @s run execute as @e[tag=despawning_beacon_blocker, distance=..1, sort=nearest, limit=1] run kill @s
-
-#Make Raiders Safe From Despawn Beacons
+#Make Raiders Safe From Spawn Blocker
 execute as @e[type=#raiders] store result score @s raider_wave_num run data get entity @s Wave 1
-tag @e[scores={raider_wave_num=1..}] add safe_from_dspwn_beacon
+tag @e[scores={raider_wave_num=1..}] add safe_from_spawn_blocker
 
-#Despawn Beaocn Blocker
-execute as @e[tag=despawning_beacon_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @e[type=#spawn_blockers:hostile,dx=16,dy=16,dz=16] add safe_from_dspwn_beacon
-execute as @e[tag=despawning_beacon_blocker] run data merge entity @s {Duration:1000000000}
-execute as @e[tag=despawning_beacon_blocker] at @s unless block ~ ~-1 ~ warped_wart_block run tellraw @p {"text": "Despawn Blocker Removed", "color": "yellow"}
-execute as @e[tag=despawning_beacon_blocker] at @s unless block ~ ~-1 ~ warped_wart_block run kill @s
+#Anti Spawn Blocker
+execute as @e[tag=anti_spawn_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @e[type=#spawn_blockers:hostile, dx=16, dy=16, dz=16] add safe_from_spawn_blocker
+execute as @e[tag=anti_spawn_blocker] run data merge entity @s {Duration:1000000000}
+execute as @e[tag=anti_spawn_blocker] at @s unless block ~ ~ ~ #spawn_blockers/air_or_water run tellraw @p {"text": "Anti Spawn Blocker Removed", "color": "yellow"}
+execute as @e[tag=anti_spawn_blocker] at @s unless block ~ ~ ~ #spawn_blockers/air_or_water run kill @s
+execute as @e[tag=anti_spawn_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @a[scores={spwn_blcker_find=1}, dx=16, dy=16, dz=16] add anti_spawn_blocker_detected
 
-#Despawn Beacon
-execute as @e[tag=despawning_beacon] at @s run function spawn_blockers:despawn_beacon
+#Spawn Blocker
+execute as @e[tag=spawn_blocker] at @s run function spawn_blockers:spawn_blocker
 
 #Despawn Gui Toggle
-execute as @a[scores={dspn_beac_gui=1}, tag=!despawn_beacon_gui] run tag @s add despawn_beacon_gui_on
-execute as @a[scores={dspn_beac_gui=1}, tag=despawn_beacon_gui] run tag @s add despawn_beacon_gui_off
-tag @a[tag=despawn_beacon_gui_on] add despawn_beacon_gui
-tag @a[tag=despawn_beacon_gui_off] remove despawn_beacon_gui
+execute as @a[scores={spwn_blckr_gui=1}, tag=!spawn_blocker_gui] run tag @s add spawn_blocker_gui_on
+execute as @a[scores={spwn_blckr_gui=1}, tag=spawn_blocker_gui] run tag @s add spawn_blocker_gui_off
+tag @a[tag=spawn_blocker_gui_on] add spawn_blocker_gui
+tag @a[tag=spawn_blocker_gui_off] remove spawn_blocker_gui
 
 
 #Detect Beacons
     #Give detection status message
-execute as @a[scores={dspn_beac_detect=1}, tag=despawn_beacon_detected] run tellraw @s {"text": "You're within the range of a despawning beacon (now emitting beam for 10 seconds).", "color": "green"}
-execute as @a[scores={dspn_beac_detect=1}, tag=!despawn_beacon_detected, tag=despawn_beacon_air_detected] run tellraw @s {"text": "You're above range of a despawning beacon (now emitting beam for 10 seconds).", "color": "yellow"}
-execute as @a[scores={dspn_beac_detect=1}, tag=!despawn_beacon_detected, tag=!despawn_beacon_air_detected] run tellraw @s {"text": "You're not within the range of a despawning beacon.", "color": "red"}
+execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] run tellraw @s {"text": "You're within the range of a Spawn Blocker (now emitting beam for 10 seconds).", "color": "green"}
+execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected, tag=anti_spawn_blocker_detected] run tellraw @s {"text": "You're also within the range of a Anti Spawn Blocker.", "color": "red"}
+execute as @a[scores={spwn_blcker_find=1}, tag=!spawn_blocker_detected] run tellraw @s {"text": "You're not within the range of a despawning beacon.", "color": "red"}
     #Temporary Beam
-execute as @a[scores={dspn_beac_detect=1}, tag=despawn_beacon_detected] at @s run scoreboard players set @e[tag=despawning_beacon, distance=..128] dspwn_beacn_beam 0
-execute as @a[scores={dspn_beac_detect=1}, tag=despawn_beacon_detected] at @s run scoreboard players set @e[tag=despawning_beacon_blocker, distance=..128] dspwn_beacn_beam 0
-execute as @a[scores={dspn_beac_detect=1}, tag=despawn_beacon_air_detected] at @s run scoreboard players set @e[tag=despawning_beacon, distance=..128] dspwn_beacn_beam 0
-execute as @a[scores={dspn_beac_detect=1}, tag=despawn_beacon_air_detected] at @s run scoreboard players set @e[tag=despawning_beacon_blocker, distance=..128] dspwn_beacn_beam 0
+execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=spawn_blocker, distance=..128] spwn_blcker_beam 0
+execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=anti_spawn_blocker, distance=..128] spwn_blcker_beam 0
 
 #Remove tags
-tag @a remove despawn_beacon_detected
-tag @a remove despawn_beacon_air_detected
-tag @a remove despawn_beacon_gui_on
-tag @a remove despawn_beacon_gui_off
+tag @a remove anti_spawn_blocker_detected
+tag @a remove spawn_blocker_detected
+tag @a remove spawn_blocker_gui_on
+tag @a remove spawn_blocker_gui_off
 
 #Make mobs that spawned outside this range, safe.
-tag @e[type=#spawn_blockers:hostile] add safe_from_dspwn_beacon
+tag @e[type=#spawn_blockers:hostile] add safe_from_spawn_blocker
 
-#Reset Trigger Scores
-scoreboard players set @a dspn_beacn_unset 0
-scoreboard players set @a dspn_beacon_set 0
-scoreboard players set @a d_beac_blckr_set 0
-scoreboard players set @a d_bc_blckr_unset 0
-scoreboard players set @a dspn_beac_detect 0
-scoreboard players set @a dspn_beac_gui 0
+#Reset Scores
+scoreboard players set @a spwn_blcker_set 0
+scoreboard players set @a anti_s_blckr_set 0
+scoreboard players set @a spwn_blcker_find 0
+scoreboard players set @a spwn_blckr_gui 0
+scoreboard players set @a spawn_block_menu 0

@@ -1,12 +1,12 @@
-scoreboard objectives add dspwn_beacn_tick dummy "Light Level Display Tick Timer"
-scoreboard objectives add dspwn_beacn_beam dummy "Temporary Despawn Beacon Beam For Finding"
+scoreboard objectives add spwn_blcker_tick dummy "Light Level Display Tick Timer"
+scoreboard objectives add spwn_blcker_beam dummy "Temporary Despawn Beacon Beam For Finding"
 scoreboard objectives add raider_wave_num dummy "Rainer Wave Number"
 
-scoreboard objectives add dspn_beacon_set trigger "Set Beacon To Despawn"
-scoreboard objectives add dspn_beacn_unset trigger "Set Nearest Beacon to Not Despawn"
-scoreboard objectives add d_beac_blckr_set trigger "Set Warped Wart Block To Block Despawning Beacon"
-scoreboard objectives add d_bc_blckr_unset trigger "Set Warped Wart Block To Not Block Despawning Beacon"
-scoreboard objectives add dspn_beac_detect trigger "See if you're in range of a despawn beacon"
-scoreboard objectives add dspn_beac_gui trigger "Show Despawn Beacon Detection GUI"
+scoreboard objectives add spwn_blcker_set dummy "Set Beacon To Despawn"
+scoreboard objectives add anti_s_blckr_set dummy "Set Warped Wart Block To Block Despawning Beacon"
+scoreboard objectives add spwn_blcker_find dummy "See if you're in range of a despawn beacon"
+scoreboard objectives add spwn_blckr_gui dummy "Show Despawn Beacon Detection GUI"
 
-scoreboard players add dummy dspwn_beacn_tick 0
+scoreboard objectives add spawn_block_menu trigger "Spawn Blocker Menu"
+
+scoreboard players add dummy spwn_blcker_tick 0
