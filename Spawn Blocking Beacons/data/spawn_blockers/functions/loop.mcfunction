@@ -1,6 +1,6 @@
 scoreboard players add dummy dspwn_beacn_tick 1
 
-execute if score dummy dspwn_beacn_tick matches 5.. run function dspwn_beacons:loop_timed
+execute if score dummy dspwn_beacn_tick matches 5.. run function spawn_blockers:loop_timed
 execute if score dummy dspwn_beacn_tick matches 5.. run scoreboard players set dummy dspwn_beacn_tick 0
 
 execute as @e[scores={dspwn_beacn_beam=0..},tag=!despawning_beacon_blocker] at @s run particle dust 1 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force

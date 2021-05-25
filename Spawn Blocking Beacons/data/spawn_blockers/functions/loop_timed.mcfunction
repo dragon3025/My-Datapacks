@@ -1,8 +1,8 @@
 #Create Despawner
-execute as @a[scores={dspn_beacon_set=1..}] at @s run function dspwn_beacons:try_to_create_despawner
+execute as @a[scores={dspn_beacon_set=1..}] at @s run function spawn_blockers:try_to_create_despawner
 
 #Create Despawn Blocker
-execute as @a[scores={d_beac_blckr_set=1..}] at @s run function dspwn_beacons:try_to_create_despawn_blocker
+execute as @a[scores={d_beac_blckr_set=1..}] at @s run function spawn_blockers:try_to_create_despawn_blocker
 
 #Remove Despawner
 execute as @a[scores={dspn_beacn_unset=1}] at @s run tellraw @s {"text": "As a saftey measure, use '/trigger dspn_beacn_unset set 2'", "color": "red"}
@@ -21,13 +21,13 @@ execute as @e[type=#raiders] store result score @s raider_wave_num run data get 
 tag @e[scores={raider_wave_num=1..}] add safe_from_dspwn_beacon
 
 #Despawn Beaocn Blocker
-execute as @e[tag=despawning_beacon_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @e[type=#dspwn_beacons:hostile,dx=16,dy=16,dz=16] add safe_from_dspwn_beacon
+execute as @e[tag=despawning_beacon_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @e[type=#spawn_blockers:hostile,dx=16,dy=16,dz=16] add safe_from_dspwn_beacon
 execute as @e[tag=despawning_beacon_blocker] run data merge entity @s {Duration:1000000000}
 execute as @e[tag=despawning_beacon_blocker] at @s unless block ~ ~-1 ~ warped_wart_block run tellraw @p {"text": "Despawn Blocker Removed", "color": "yellow"}
 execute as @e[tag=despawning_beacon_blocker] at @s unless block ~ ~-1 ~ warped_wart_block run kill @s
 
 #Despawn Beacon
-execute as @e[tag=despawning_beacon] at @s run function dspwn_beacons:despawn_beacon
+execute as @e[tag=despawning_beacon] at @s run function spawn_blockers:despawn_beacon
 
 #Despawn Gui Toggle
 execute as @a[scores={dspn_beac_gui=1}, tag=!despawn_beacon_gui] run tag @s add despawn_beacon_gui_on
@@ -54,7 +54,7 @@ tag @a remove despawn_beacon_gui_on
 tag @a remove despawn_beacon_gui_off
 
 #Make mobs that spawned outside this range, safe.
-tag @e[type=#dspwn_beacons:hostile] add safe_from_dspwn_beacon
+tag @e[type=#spawn_blockers:hostile] add safe_from_dspwn_beacon
 
 #Reset Trigger Scores
 scoreboard players set @a dspn_beacn_unset 0
