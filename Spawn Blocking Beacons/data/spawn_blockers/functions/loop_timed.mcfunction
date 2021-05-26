@@ -1,3 +1,10 @@
+execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s run particle dust 1 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force
+execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s run particle dust 0.5 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force
+execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s positioned ~-50.5 ~-50.5 ~-50.5 run function spawn_blockers:spawn_blocker/visual_box
+
+execute as @e[scores={spwn_blcker_beam=0..},tag=anti_spawn_blocker] at @s run particle dust 1 0 0 20 ~ ~ ~ 0.1 384 0.1 1 50 force
+execute as @e[scores={spwn_blcker_beam=0..},tag=anti_spawn_blocker] at @s run particle dust 0 0 0 20 ~ ~ ~ 0.1 0.1 0.1 1 2 force
+
 #Menu
 execute as @a[scores={spawn_block_menu=1}] run function spawn_blockers:spawn_blocker_menu
 scoreboard players set @a[scores={spawn_block_menu=2}] spwn_blcker_set 1
@@ -6,20 +13,20 @@ scoreboard players set @a[scores={spawn_block_menu=4}] spwn_blcker_find 1
 scoreboard players set @a[scores={spawn_block_menu=5}] spwn_blckr_gui 1
 
 #Create Spawn Blocker
-execute as @a[scores={spwn_blcker_set=1..}] at @s run function spawn_blockers:try_to_create_spawn_blocker
+execute as @a[scores={spwn_blcker_set=1..}] at @s run function spawn_blockers:spawn_blocker/try_to_create
 
 #Create Anti Spawn Blocker
-execute as @a[scores={anti_s_blckr_set=1..}] at @s run function spawn_blockers:try_to_create_anti_spawn_blocker
+execute as @a[scores={anti_s_blckr_set=1..}] at @s run function spawn_blockers:anti_spawn_blocker/try_to_create
 
 #Make Raiders Safe From Spawn Blocker
 execute as @e[type=#raiders] store result score @s raider_wave_num run data get entity @s Wave 1
 tag @e[scores={raider_wave_num=1..}] add safe_from_spawn_blocker
 
 #Anti Spawn Blocker
-execute as @e[tag=anti_spawn_blocker] at @s run function spawn_blockers:anti_spawn_blocker
+execute as @e[tag=anti_spawn_blocker] at @s run function spawn_blockers:anti_spawn_blocker/main
 
 #Spawn Blocker
-execute as @e[tag=spawn_blocker] at @s run function spawn_blockers:spawn_blocker
+execute as @e[tag=spawn_blocker] at @s run function spawn_blockers:spawn_blocker/main
 
 #Despawn Gui Toggle
 execute as @a[scores={spwn_blckr_gui=1}, tag=!spawn_blocker_gui] run tag @s add spawn_blocker_gui_on
@@ -34,8 +41,8 @@ execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] run tellr
 execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected, tag=anti_spawn_blocker_detected] run tellraw @s {"text": "You're also within the range of a Anti Spawn Blocker.", "color": "red"}
 execute as @a[scores={spwn_blcker_find=1}, tag=!spawn_blocker_detected] run tellraw @s {"text": "You're not within the range of a despawning beacon.", "color": "red"}
     #Temporary Beam
-execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=spawn_blocker, distance=..128] spwn_blcker_beam 0
-execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=anti_spawn_blocker, distance=..128] spwn_blcker_beam 0
+execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=spawn_blocker] spwn_blcker_beam 0
+execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=anti_spawn_blocker] spwn_blcker_beam 0
 
 #Remove tags
 tag @a remove anti_spawn_blocker_detected

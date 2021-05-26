@@ -3,12 +3,6 @@ scoreboard players add dummy spwn_blcker_tick 1
 execute if score dummy spwn_blcker_tick matches 5.. run function spawn_blockers:loop_timed
 execute if score dummy spwn_blcker_tick matches 5.. run scoreboard players set dummy spwn_blcker_tick 0
 
-execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s run particle dust 1 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force
-execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s run particle dust 0.5 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force
-
-execute as @e[scores={spwn_blcker_beam=0..},tag=anti_spawn_blocker] at @s run particle dust 1 0 0 20 ~ ~ ~ 0.1 384 0.1 1 50 force
-execute as @e[scores={spwn_blcker_beam=0..},tag=anti_spawn_blocker] at @s run particle dust 0 0 0 20 ~ ~ ~ 0.1 0.1 0.1 1 2 force
-
 scoreboard players add @e[scores={spwn_blcker_beam=0..}] spwn_blcker_beam 1
 scoreboard players reset @e[scores={spwn_blcker_beam=200..}] spwn_blcker_beam
 
