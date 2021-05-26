@@ -1,15 +1,8 @@
-execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s run particle dust 1 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force
-execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s run particle dust 0.5 1 1 20 ~ ~ ~ 0.1 384 0.1 1 25 force
-execute as @e[scores={spwn_blcker_beam=0..},tag=!anti_spawn_blocker] at @s positioned ~-50.5 ~-50.5 ~-50.5 run function spawn_blockers:spawn_blocker/visual_box
-
-execute as @e[scores={spwn_blcker_beam=0..},tag=anti_spawn_blocker] at @s run particle dust 1 0 0 20 ~ ~ ~ 0.1 384 0.1 1 50 force
-execute as @e[scores={spwn_blcker_beam=0..},tag=anti_spawn_blocker] at @s run particle dust 0 0 0 20 ~ ~ ~ 0.1 0.1 0.1 1 2 force
-
 #Menu
 execute as @a[scores={spawn_block_menu=1}] run function spawn_blockers:spawn_blocker_menu
 scoreboard players set @a[scores={spawn_block_menu=2}] spwn_blcker_set 1
 scoreboard players set @a[scores={spawn_block_menu=3}] anti_s_blckr_set 1
-scoreboard players set @a[scores={spawn_block_menu=4}] spwn_blcker_find 1
+scoreboard players set @a[scores={spawn_block_menu=4}] spwn_blcker_find 40
 scoreboard players set @a[scores={spawn_block_menu=5}] spwn_blckr_gui 1
 
 #Create Spawn Blocker
@@ -37,12 +30,9 @@ tag @a[tag=spawn_blocker_gui_off] remove spawn_blocker_gui
 
 #Detect Beacons
     #Give detection status message
-execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] run tellraw @s {"text": "You're within the range of a Spawn Blocker (now emitting beam for 10 seconds).", "color": "green"}
-execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected, tag=anti_spawn_blocker_detected] run tellraw @s {"text": "You're also within the range of a Anti Spawn Blocker.", "color": "red"}
-execute as @a[scores={spwn_blcker_find=1}, tag=!spawn_blocker_detected] run tellraw @s {"text": "You're not within the range of a despawning beacon.", "color": "red"}
-    #Temporary Beam
-execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=spawn_blocker] spwn_blcker_beam 0
-execute as @a[scores={spwn_blcker_find=1}, tag=spawn_blocker_detected] at @s run scoreboard players set @e[tag=anti_spawn_blocker] spwn_blcker_beam 0
+execute as @a[scores={spwn_blcker_find=40}, tag=spawn_blocker_detected] run tellraw @s {"text": "You're within the range of a Spawn Blocker (now emitting beam for 10 seconds).", "color": "green"}
+execute as @a[scores={spwn_blcker_find=40}, tag=spawn_blocker_detected, tag=anti_spawn_blocker_detected] run tellraw @s {"text": "You're also within the range of a Anti Spawn Blocker.", "color": "red"}
+execute as @a[scores={spwn_blcker_find=40}, tag=!spawn_blocker_detected] run tellraw @s {"text": "You're not within the range of a despawning beacon.", "color": "red"}
 
 #Remove tags
 tag @a remove anti_spawn_blocker_detected
@@ -56,6 +46,6 @@ tag @e[type=#spawn_blockers:hostile] add safe_from_spawn_blocker
 #Reset Scores
 scoreboard players set @a spwn_blcker_set 0
 scoreboard players set @a anti_s_blckr_set 0
-scoreboard players set @a spwn_blcker_find 0
+scoreboard players remove @a[scores={spwn_blcker_find=1..}] spwn_blcker_find 1
 scoreboard players set @a spwn_blckr_gui 0
 scoreboard players set @a spawn_block_menu 0
