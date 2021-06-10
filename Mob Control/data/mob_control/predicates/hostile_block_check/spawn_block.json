@@ -5,7 +5,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:air"
+					"block": "minecraft:air"
 				}
 			}
 		},
@@ -13,7 +13,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:cave_air"
+					"block": "minecraft:cave_air"
 				}
 			}
 		},
@@ -21,7 +21,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:snow",
+					"block": "minecraft:snow",
 					"state": {
 						"layers": "1"
 					}
@@ -32,7 +32,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:banners"
+					"block": "minecraft:banners"
 				}
 			}
 		},
@@ -40,7 +40,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:scaffolding"
+					"block": "minecraft:scaffolding"
 				}
 			}
 		},
@@ -64,7 +64,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:sugar_cane"
+					"block": "minecraft:sugar_cane"
 				}
 			}
 		},
@@ -72,7 +72,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:grass"
+					"block": "minecraft:grass"
 				}
 			}
 		},
@@ -80,7 +80,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:fern"
+					"block": "minecraft:fern"
 				}
 			}
 		},
@@ -88,7 +88,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:tall_grass"
+					"block": "minecraft:tall_grass"
 				}
 			}
 		},
@@ -96,7 +96,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:large_fern"
+					"block": "minecraft:large_fern"
 				}
 			}
 		},
@@ -112,7 +112,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:bamboo_sapling"
+					"block": "minecraft:bamboo_sapling"
 				}
 			}
 		},
@@ -128,7 +128,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:dead_bush"
+					"block": "minecraft:dead_bush"
 				}
 			}
 		},
@@ -136,7 +136,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:brown_mushroom"
+					"block": "minecraft:brown_mushroom"
 				}
 			}
 		},
@@ -144,7 +144,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:red_mushroom"
+					"block": "minecraft:red_mushroom"
 				}
 			}
 		},
@@ -152,7 +152,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:crimson_fungus"
+					"block": "minecraft:crimson_fungus"
 				}
 			}
 		},
@@ -160,7 +160,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:warped_fungus"
+					"block": "minecraft:warped_fungus"
 				}
 			}
 		},
@@ -168,7 +168,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:crimson_roots"
+					"block": "minecraft:crimson_roots"
 				}
 			}
 		},
@@ -176,7 +176,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:warped_roots"
+					"block": "minecraft:warped_roots"
 				}
 			}
 		},
@@ -184,7 +184,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:nether_sprouts"
+					"block": "minecraft:nether_sprouts"
 				}
 			}
 		},
@@ -214,7 +214,7 @@
 							"condition": "minecraft:location_check",
 							"predicate": {
 								"block": {
-									"blocks": "minecraft:water"
+									"block": "minecraft:water"
 								}
 							}
 						}
@@ -226,7 +226,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"blocks": "minecraft:tripwire"
+					"block": "minecraft:tripwire"
 				}
 			}
 		}
