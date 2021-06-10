@@ -1,19 +1,19 @@
-execute positioned ~ ~ ~-9 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-8 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-7 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-6 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-5 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-4 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-3 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-2 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~-1 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~ run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~1 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~2 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~3 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~4 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~5 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~6 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~7 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~8 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
-execute positioned ~ ~ ~9 run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:2, Tags:["light_lv"]}
+execute positioned ~ ~ ~-9 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-8 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-7 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-6 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-5 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-4 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-3 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-2 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~-1 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~ unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~1 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~2 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~3 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~4 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~5 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~6 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~7 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~8 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
+execute positioned ~ ~ ~9 unless block ~ ~-1 ~ #light_lv:spawn_block run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_lv"]}
