@@ -295,7 +295,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:cauldron"
+					"tag": "minecraft:cauldrons"
 				}
 			}
 		},
