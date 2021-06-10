@@ -2,10 +2,10 @@
     "replace": false,
     "values": [
         "#light_lv:flowers",
+        "#light_lv:non_solid_saplings",
         "#minecraft:banners",
         "#minecraft:climbable",
         "#minecraft:doors",
-        "#minecraft:saplings",
         "#minecraft:signs",
         "#minecraft:underwater_bonemeals",
         "minecraft:air",
