@@ -5,7 +5,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:redstone_torch"
+					"blocks": "minecraft:redstone_torch"
 				}
 			}
 		},
@@ -13,7 +13,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:lantern"
+					"blocks": "minecraft:lantern"
 				}
 			}
 		},
@@ -21,7 +21,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:soul_lantern"
+					"blocks": "minecraft:soul_lantern"
 				}
 			}
 		},
@@ -33,7 +33,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:bedrock"
+					"blocks": "minecraft:bedrock"
 				}
 			}
 		},
@@ -49,7 +49,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:barrier"
+					"blocks": "minecraft:barrier"
 				}
 			}
 		},
@@ -57,7 +57,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:ice"
+					"blocks": "minecraft:ice"
 				}
 			}
 		},
@@ -65,7 +65,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:farmland"
+					"blocks": "minecraft:farmland"
 				}
 			}
 		},
@@ -73,7 +73,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:water"
+					"blocks": "minecraft:water"
 				}
 			}
 		},
@@ -81,7 +81,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:flowing_water"
+					"blocks": "minecraft:flowing_water"
 				}
 			}
 		},
@@ -89,7 +89,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:cactus"
+					"blocks": "minecraft:cactus"
 				}
 			}
 		},
@@ -105,7 +105,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:bubble_column"
+					"blocks": "minecraft:bubble_column"
 				}
 			}
 		},
@@ -143,7 +143,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:chorus_plant"
+					"blocks": "minecraft:chorus_plant"
 				}
 			}
 		},
@@ -151,7 +151,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:chorus_flower"
+					"blocks": "minecraft:chorus_flower"
 				}
 			}
 		},
@@ -159,7 +159,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:dragon_egg"
+					"blocks": "minecraft:dragon_egg"
 				}
 			}
 		},
@@ -167,7 +167,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:end_portal"
+					"blocks": "minecraft:end_portal"
 				}
 			}
 		},
@@ -175,7 +175,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:end_portal_frame"
+					"blocks": "minecraft:end_portal_frame"
 				}
 			}
 		},
@@ -183,7 +183,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:end_gateway"
+					"blocks": "minecraft:end_gateway"
 				}
 			}
 		},
@@ -207,7 +207,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:stonecutter"
+					"blocks": "minecraft:stonecutter"
 				}
 			}
 		},
@@ -215,7 +215,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:chest"
+					"blocks": "minecraft:chest"
 				}
 			}
 		},
@@ -223,7 +223,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:trapped_chest"
+					"blocks": "minecraft:trapped_chest"
 				}
 			}
 		},
@@ -231,7 +231,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:ender_chest"
+					"blocks": "minecraft:ender_chest"
 				}
 			}
 		},
@@ -239,7 +239,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:enchanting_table"
+					"blocks": "minecraft:enchanting_table"
 				}
 			}
 		},
@@ -247,7 +247,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:anvil"
+					"blocks": "minecraft:anvil"
 				}
 			}
 		},
@@ -255,7 +255,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:grindstone"
+					"blocks": "minecraft:grindstone"
 				}
 			}
 		},
@@ -263,7 +263,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:bell"
+					"blocks": "minecraft:bell"
 				}
 			}
 		},
@@ -271,7 +271,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:lectern"
+					"blocks": "minecraft:lectern"
 				}
 			}
 		},
@@ -279,7 +279,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:composter"
+					"blocks": "minecraft:composter"
 				}
 			}
 		},
@@ -287,7 +287,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:brewing_stand"
+					"blocks": "minecraft:brewing_stand"
 				}
 			}
 		},
@@ -295,7 +295,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:cauldron"
+					"blocks": "minecraft:cauldron"
 				}
 			}
 		},
@@ -303,7 +303,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:cake"
+					"blocks": "minecraft:cake"
 				}
 			}
 		},
@@ -311,7 +311,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:hopper"
+					"blocks": "minecraft:hopper"
 				}
 			}
 		},
@@ -326,7 +326,7 @@
 							"condition": "minecraft:location_check",
 							"predicate": {
 								"block": {
-									"block": "minecraft:piston"
+									"blocks": "minecraft:piston"
 								}
 							}
 						}
@@ -416,7 +416,7 @@
 							"condition": "minecraft:location_check",
 							"predicate": {
 								"block": {
-									"block": "minecraft:piston_head"
+									"blocks": "minecraft:piston_head"
 								}
 							}
 						}
@@ -446,7 +446,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:daylight_detector"
+					"blocks": "minecraft:daylight_detector"
 				}
 			}
 		},
@@ -454,7 +454,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:repeater"
+					"blocks": "minecraft:repeater"
 				}
 			}
 		},
@@ -462,7 +462,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:comparator"
+					"blocks": "minecraft:comparator"
 				}
 			}
 		},
@@ -470,7 +470,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:redstone_wire"
+					"blocks": "minecraft:redstone_wire"
 				}
 			}
 		},
@@ -478,7 +478,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:lever"
+					"blocks": "minecraft:lever"
 				}
 			}
 		},
@@ -526,7 +526,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:iron_bars"
+					"blocks": "minecraft:iron_bars"
 				}
 			}
 		},
@@ -542,7 +542,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:flower_pot"
+					"blocks": "minecraft:flower_pot"
 				}
 			}
 		},
@@ -550,7 +550,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:sea_pickle"
+					"blocks": "minecraft:sea_pickle"
 				}
 			}
 		},
@@ -558,7 +558,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:turtle_egg"
+					"blocks": "minecraft:turtle_egg"
 				}
 			}
 		},
@@ -582,7 +582,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:attached_melon_stem"
+					"blocks": "minecraft:attached_melon_stem"
 				}
 			}
 		},
@@ -590,7 +590,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:attached_pumpkin_stem"
+					"blocks": "minecraft:attached_pumpkin_stem"
 				}
 			}
 		},
@@ -598,7 +598,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:cocoa"
+					"blocks": "minecraft:cocoa"
 				}
 			}
 		},
@@ -606,7 +606,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:bamboo"
+					"blocks": "minecraft:bamboo"
 				}
 			}
 		},
@@ -614,7 +614,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:lily_pad"
+					"blocks": "minecraft:lily_pad"
 				}
 			}
 		}

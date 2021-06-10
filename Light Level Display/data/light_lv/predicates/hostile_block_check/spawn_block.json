@@ -5,7 +5,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:air"
+					"blocks": "minecraft:air"
 				}
 			}
 		},
@@ -13,7 +13,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:cave_air"
+					"blocks": "minecraft:cave_air"
 				}
 			}
 		},
@@ -21,7 +21,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:snow",
+					"blocks": "minecraft:snow",
 					"state": {
 						"layers": "1"
 					}
@@ -40,7 +40,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:scaffolding"
+					"blocks": "minecraft:scaffolding"
 				}
 			}
 		},
@@ -64,7 +64,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:sugar_cane"
+					"blocks": "minecraft:sugar_cane"
 				}
 			}
 		},
@@ -72,7 +72,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:grass"
+					"blocks": "minecraft:grass"
 				}
 			}
 		},
@@ -80,7 +80,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:fern"
+					"blocks": "minecraft:fern"
 				}
 			}
 		},
@@ -88,7 +88,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:tall_grass"
+					"blocks": "minecraft:tall_grass"
 				}
 			}
 		},
@@ -96,7 +96,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:large_fern"
+					"blocks": "minecraft:large_fern"
 				}
 			}
 		},
@@ -112,7 +112,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:bamboo_sapling"
+					"blocks": "minecraft:bamboo_sapling"
 				}
 			}
 		},
@@ -128,7 +128,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:dead_bush"
+					"blocks": "minecraft:dead_bush"
 				}
 			}
 		},
@@ -136,7 +136,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:brown_mushroom"
+					"blocks": "minecraft:brown_mushroom"
 				}
 			}
 		},
@@ -144,7 +144,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:red_mushroom"
+					"blocks": "minecraft:red_mushroom"
 				}
 			}
 		},
@@ -152,7 +152,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:crimson_fungus"
+					"blocks": "minecraft:crimson_fungus"
 				}
 			}
 		},
@@ -160,7 +160,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:warped_fungus"
+					"blocks": "minecraft:warped_fungus"
 				}
 			}
 		},
@@ -168,7 +168,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:crimson_roots"
+					"blocks": "minecraft:crimson_roots"
 				}
 			}
 		},
@@ -176,7 +176,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:warped_roots"
+					"blocks": "minecraft:warped_roots"
 				}
 			}
 		},
@@ -184,7 +184,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:nether_sprouts"
+					"blocks": "minecraft:nether_sprouts"
 				}
 			}
 		},
@@ -214,7 +214,7 @@
 							"condition": "minecraft:location_check",
 							"predicate": {
 								"block": {
-									"block": "minecraft:water"
+									"blocks": "minecraft:water"
 								}
 							}
 						}
@@ -226,7 +226,7 @@
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"block": "minecraft:tripwire"
+					"blocks": "minecraft:tripwire"
 				}
 			}
 		},
