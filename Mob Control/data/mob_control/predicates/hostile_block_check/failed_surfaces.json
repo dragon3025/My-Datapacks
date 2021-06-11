@@ -165,6 +165,47 @@
 					}
 				]
 			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:alternative",
+				"terms": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"blocks": [
+										"minecraft:snow"
+									]
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"state": {
+									"layers": "1"
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"state": {
+									"layers": "8"
+								}
+							}
+						}
+					}
+				]
+			}
 		}
 	]
 }
