@@ -21,4 +21,3 @@ execute unless score admin uni_rp_chatter matches -2147483648..2147483647 run sc
 scoreboard objectives add pet_chatter_cool dummy "Pet Chatter Cool Down"
 scoreboard objectives add rp_chatter_tick dummy "Timer for seconds processing"
 scoreboard objectives add pet_chatter_time dummy "Time allowed for Pet Chatter (in Seconds)"
-scoreboard objectives add wolf_anger_time dummy "Wolf Anger Time"

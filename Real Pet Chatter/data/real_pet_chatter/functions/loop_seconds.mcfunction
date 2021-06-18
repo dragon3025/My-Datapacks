@@ -12,11 +12,6 @@ execute as @e[type=#real_pet_chatter:pets] at @s if entity @p[distance=..16] run
 #Decrease cooldown if the player is close enough
 execute as @e[type=#real_pet_chatter:pets] at @s if entity @p[distance=..128] run scoreboard players remove @s[scores={pet_chatter_cool=1..}] pet_chatter_cool 1
 
-#Unmute in special situations
-execute as @e[type=wolf] at @s if entity @e[type=#real_pet_chatter:hostile, distance=..32] run scoreboard players set @s pet_chatter_cool 0
-execute as @e[type=wolf] store result score @s wolf_anger_time run data get entity @s AngerTime
-execute as @e[scores={wolf_anger_time=1..}] run scoreboard players set @s pet_chatter_cool 0
-
 #Run functions for pets away from players
 execute as @e[type=#real_pet_chatter:pets, tag=!away_from_player] at @s unless entity @p[distance=..128] run function real_pet_chatter:pet_away_from_player
 
