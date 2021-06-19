@@ -1,6 +1,6 @@
 # Melt large areas of obsidian
-execute if score admin dt_melt_obsidian matches 1.. as @e[type=minecraft:item_frame,nbt={Item:{id:"minecraft:blaze_powder", tag:{display:{Name:'{"text":"melt_obsidian"}'}}}}] at @s run fill ^-7 ^-7 ^-1 ^7 ^7 ^-15 minecraft:lava replace minecraft:obsidian
-execute if score admin dt_melt_obsidian matches 1.. as @e[type=minecraft:item_frame,nbt={Item:{id:"minecraft:blaze_powder", tag:{display:{Name:'{"text":"melt_obsidian"}'}}}}] run kill @s
+execute if score admin dt_melt_obsidian matches 1.. as @e[type=minecraft:item_frame,nbt={Item:{id:"minecraft:blaze_powder", tag:{display:{Name:'{"text":"melt_obsidian"}'}}}}, predicate=!drgn_twks:location/the_end_center] at @s run fill ^-7 ^-7 ^-1 ^7 ^7 ^-15 minecraft:lava replace minecraft:obsidian
+execute if score admin dt_melt_obsidian matches 1.. as @e[type=minecraft:item_frame,nbt={Item:{id:"minecraft:blaze_powder", tag:{display:{Name:'{"text":"melt_obsidian"}'}}}}, predicate=!drgn_twks:location/the_end_center] run kill @s
 
 # Melt large areas of snow
 execute if score admin dt_melt_snow matches 1.. as @e[type=minecraft:item_frame,nbt={Item:{id:"minecraft:blaze_powder", tag:{display:{Name:'{"text":"melt_snow"}'}}}}] at @s run fill ~-7 ~-7 ~-7 ~7 ~7 ~7 minecraft:air replace minecraft:snow
