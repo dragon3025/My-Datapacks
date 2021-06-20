@@ -1,7 +1,6 @@
-# Spawn Ender Dragon Egg
-execute if score admin uls_dragon_egg matches 1.. as @p[scores={killed_enderdrgn=1..}] in minecraft:the_end unless entity @e[type=ender_dragon] run summon armor_stand 0 128 0 {Invisible:1b,NoAI:1b,Tags:["dragon_egg"]}
-execute in minecraft:the_end unless entity @e[type=ender_dragon] run scoreboard players reset @a killed_enderdrgn
-execute as @e[tag=dragon_egg] at @s run function unused_or_limited_stuff:dragon_egg
+# Give Ender Dragon Egg when killing Ender Dragon. Don't reset killed Enderdragon Status, if admin score is set to 1 (this means players can only get it once, in adition to the 1st egg that dropped).
+execute if score admin uls_dragon_egg matches 1.. as @a[scores={killed_enderdrgn=1}] run give @s dragon_egg
+execute if score admin uls_dragon_egg matches 2.. run scoreboard players reset @a killed_enderdrgn
 
 # Turn White Rabbits into the Killer Bunny by renaming it "The Killer Bunny"
 execute if score admin uls_killer_bunny matches 1.. as @e[type=minecraft:rabbit,nbt={RabbitType: 1, CustomName: '{"text":"The Killer Bunny"}'}] at @s run function unused_or_limited_stuff:transform/the_killer_bunny
