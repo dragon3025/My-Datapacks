@@ -11,6 +11,14 @@ execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt={AngerTi
 #Cats make angry sounds when hostiles nearby
 execute if score admin mobs_anger_cats matches 1.. as @e[type=cat] at @s if entity @e[type=#real_pet_chatter:hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:angry_cats
 
+#Pets switch off of cooldown when hurt
+execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet] store result score @s rp_chat_health run data get entity @s Health
+execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet, scores={rpc_prev_health=0..}] if score @s rp_chat_health < @s rpc_prev_health run function real_pet_chatter:pet_away_from_player
+execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet] run scoreboard players operation @s rpc_prev_health = @s rp_chat_health
+
+#Pets are allowed to make noise no matter what chatting mode, when they're looked at directly by a player (this will hurt/death sounds)
+execute if score admin uni_rp_chatter matches ..0 as @a at @s anchored eyes facing entity @e[distance=..16, tag=chatting_pet, tag=!silenced, limit=1, sort=nearest] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run function real_pet_chatter:unmute_viewed_pet
+
 #Prepare for uninstall if set to do so
 execute if score admin uni_rp_chatter matches 1.. run scoreboard players reset @e pet_chatter_cool
 execute if score admin uni_rp_chatter matches 1.. run scoreboard players reset @e pet_chatter_time
