@@ -1,5 +1,6 @@
 # Give Ender Dragon Egg when killing Ender Dragon. Don't reset killed Enderdragon Status, if admin score is set to 1 (this means players can only get it once, in adition to the 1st egg that dropped).
-execute if score admin uls_dragon_egg matches 1.. as @a[scores={killed_enderdrgn=1}] run give @s dragon_egg
+execute if score admin uls_dragon_egg matches 1 as @a[scores={killed_enderdrgn=1}] run give @s dragon_egg
+execute if score admin uls_dragon_egg matches 2.. as @a[scores={killed_enderdrgn=1}] at @s run give @a[distance=..128] dragon_egg
 execute if score admin uls_dragon_egg matches 2.. run scoreboard players reset @a killed_enderdrgn
 
 # Turn White Rabbits into the Killer Bunny by renaming it "The Killer Bunny"
