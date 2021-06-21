@@ -14,7 +14,7 @@ execute if score admin mobs_anger_cats matches 1.. as @e[type=cat] at @s if enti
 #Uninstallation
 execute if score admin uni_rp_chatter matches 1.. run scoreboard players reset @e pet_chatter_cool
 execute if score admin uni_rp_chatter matches 1.. run scoreboard players reset @e pet_chatter_time
-execute if score admin uni_rp_chatter matches 1.. run execute as @e[type=#min_pet_chatter:pets, tag=!silenced] run data merge entity @s {Silent:false}
-execute if score admin uni_rp_chatter matches 1.. run execute as @e[type=#min_pet_chatter:pets] run tag @s remove no_chat
+execute if score admin uni_rp_chatter matches 1.. run execute as @e[type=#real_pet_chatter:pets, tag=!silenced] run data merge entity @s {Silent:false}
+execute if score admin uni_rp_chatter matches 1.. run execute as @e[type=#real_pet_chatter:pets] run tag @s remove no_chat
 execute if score admin uni_rp_chatter matches 1.. run execute as @a unless score @s uni_rp_chatter matches 1.. run tellraw @s {"text": "Real Pet Chatter is set to uninstall, go to every pet that has been muted by this datapack to unmute them. When finished, run the uninstall function", "color": "red"}
 execute if score admin uni_rp_chatter matches 1.. run execute as @a unless score @s uni_rp_chatter matches 1.. run scoreboard players set @s uni_rp_chatter 1
