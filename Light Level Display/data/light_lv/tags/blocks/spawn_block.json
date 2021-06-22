@@ -25,7 +25,6 @@
         "minecraft:tall_grass",
         "minecraft:tripwire",
         "minecraft:warped_fungus",
-        "minecraft:warped_roots",
-        "minecraft:water"
+        "minecraft:warped_roots"
     ]
 }
