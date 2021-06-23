@@ -21,34 +21,6 @@
 					}
 				}
 			}
-		},
-		{
-			"condition": "minecraft:inverted",
-			"term": {
-				"condition": "minecraft:alternative",
-				"terms": [
-					{
-						"condition": "minecraft:inverted",
-						"term": {
-							"condition": "minecraft:reference",
-							"name": "mob_control:location/ocean_and_river_variants"
-						}
-					},
-					{
-						"condition": "minecraft:inverted",
-						"term": {
-							"condition": "minecraft:location_check",
-							"predicate": {
-								"block": {
-									"blocks": [
-										"minecraft:water"
-									]
-								}
-							}
-						}
-					}
-				]
-			}
 		}
 	]
 }

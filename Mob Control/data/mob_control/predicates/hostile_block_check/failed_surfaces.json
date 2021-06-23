@@ -2,22 +2,31 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
-			"condition": "minecraft:reference",
-			"name": "mob_control:hostile_block_check/spawn_block"
-		},
-		{
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"tag": "mob_control:failed_surfaces"
+					"tag": "mob_control:spawn_block"
 				}
 			}
 		},
 		{
 			"condition": "minecraft:location_check",
 			"predicate": {
-				"fluid": {
-					"tag": "minecraft:water"
+				"block": {
+					"blocks": [
+						"minecraft:snow"
+					],
+					"state": {
+						"layers": "1"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"tag": "mob_control:failed_surfaces"
 				}
 			}
 		},
