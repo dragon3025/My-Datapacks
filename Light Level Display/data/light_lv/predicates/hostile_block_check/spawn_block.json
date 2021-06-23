@@ -23,8 +23,14 @@
 			}
 		},
 		{
-			"condition": "minecraft:reference",
-			"name": "light_lv:location/ocean_or_river_water"
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"blocks": [
+						"minecraft:water"
+					]
+				}
+			}
 		}
 	]
 }

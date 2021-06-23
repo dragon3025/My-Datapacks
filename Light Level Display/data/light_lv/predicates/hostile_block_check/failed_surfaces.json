@@ -2,22 +2,31 @@
 	"condition": "minecraft:alternative",
 	"terms": [
 		{
-			"condition": "minecraft:reference",
-			"name": "light_lv:hostile_block_check/spawn_block"
-		},
-		{
 			"condition": "minecraft:location_check",
 			"predicate": {
 				"block": {
-					"tag": "light_lv:failed_surfaces"
+					"tag": "light_lv:spawn_block"
 				}
 			}
 		},
 		{
 			"condition": "minecraft:location_check",
 			"predicate": {
-				"fluid": {
-					"tag": "minecraft:water"
+				"block": {
+					"blocks": [
+						"minecraft:snow"
+					],
+					"state": {
+						"layers": "1"
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"block": {
+					"tag": "light_lv:failed_surfaces"
 				}
 			}
 		},
