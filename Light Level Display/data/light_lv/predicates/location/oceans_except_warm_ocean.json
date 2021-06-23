@@ -46,12 +46,6 @@
         {
             "condition": "minecraft:location_check",
             "predicate": {
-                "biome": "minecraft:frozen_river"
-            }
-        },
-        {
-            "condition": "minecraft:location_check",
-            "predicate": {
                 "biome": "minecraft:lukewarm_ocean"
             }
         },
@@ -59,18 +53,6 @@
             "condition": "minecraft:location_check",
             "predicate": {
                 "biome": "minecraft:ocean"
-            }
-        },
-        {
-            "condition": "minecraft:location_check",
-            "predicate": {
-                "biome": "minecraft:river"
-            }
-        },
-        {
-            "condition": "minecraft:location_check",
-            "predicate": {
-                "biome": "minecraft:warm_ocean"
             }
         }
     ]
