@@ -19,6 +19,10 @@ execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet] run sc
 #Pets are allowed to make noise no matter what chatting mode, when they're looked at directly by a player (this will hurt/death sounds)
 execute if score admin uni_rp_chatter matches ..0 as @a at @s anchored eyes facing entity @e[distance=..16, tag=chatting_pet, tag=!silenced, limit=1, sort=nearest] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run function real_pet_chatter:unmute_viewed_pet
 
+#Allow pets to make noise no matter what chatting mode when a player is right up to them (this will allow sounds from pets you're riding)
+execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet] at @s if entity @p[distance=..1] run data merge entity @s {Silent:false}
+execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet] at @s if entity @p[distance=..1] run tag @s remove no_chat
+
 #Prepare for uninstall if set to do so
 execute if score admin uni_rp_chatter matches 1.. run scoreboard players reset @e pet_chatter_cool
 execute if score admin uni_rp_chatter matches 1.. run scoreboard players reset @e pet_chatter_time

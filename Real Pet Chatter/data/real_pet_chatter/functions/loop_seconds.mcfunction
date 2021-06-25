@@ -25,4 +25,5 @@ execute as @e[tag=chatting_pet, scores={pet_chatter_cool=1..}, tag=!no_chat] run
 execute as @e[tag=chatting_pet, scores={pet_chatter_cool=..0}, tag=!silenced, tag=no_chat] run data merge entity @s {Silent:false}
 execute as @e[tag=chatting_pet, scores={pet_chatter_cool=..0}, tag=!silenced, tag=no_chat] run tag @s remove no_chat
 
-execute as @e[type=#real_pet_chatter:pets, tag=!chatting_pet] at @s run function real_pet_chatter:set_pet_for_chatting
+execute as @e[type=#real_pet_chatter:pets_with_owner_data] unless entity @s[scores={rpc_has_owner=1}] store success score @s rpc_has_owner run data get entity @s Owner
+execute as @e[type=#real_pet_chatter:pets, tag=!chatting_pet, nbt=!{Tame:false}] at @s unless entity @s[type=#real_pet_chatter:pets_with_owner_data, scores={rpc_has_owner=0}] run function real_pet_chatter:set_pet_for_chatting
