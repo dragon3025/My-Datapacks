@@ -11,13 +11,14 @@ execute as @e[tag=chatting_pet] at @s if entity @p[distance=..16] unless entity 
 
 #Decrease cooldown if the player is close enough
 execute as @e[tag=chatting_pet] at @s if entity @p[distance=..128] run scoreboard players remove @s[scores={pet_chatter_cool=1..}] pet_chatter_cool 1
+execute as @e[tag=chatting_pet] at @s if entity @p[distance=..128] run tag @s remove away_from_player
 
 #Run functions for pets away from players
 execute as @e[tag=chatting_pet, tag=!away_from_player] at @s unless entity @p[distance=..128] run function real_pet_chatter:pet_away_from_player
 
 #Remove cooldown if hostile is nearby
-execute as @e[type=wolf, nbt=!{AngerTime:0}, tag=!away_from_player] run function real_pet_chatter:pet_away_from_player
-execute as @e[tag=chatting_pet, tag=!away_from_player] at @s if entity @e[type=#real_pet_chatter:hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:pet_away_from_player
+execute as @e[type=wolf, nbt=!{AngerTime:0}] run function real_pet_chatter:pet_away_from_player
+execute as @e[tag=chatting_pet] at @s if entity @e[type=#real_pet_chatter:hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:pet_away_from_player
 
 #Toggle Silenced Status
 execute as @e[tag=chatting_pet, scores={pet_chatter_cool=1..}, tag=!no_chat] run data merge entity @s {Silent:true}
