@@ -2,13 +2,11 @@
 scoreboard objectives add mob_ctrl_copy_ho dummy "Mob Control Copy Horse Stats"
 scoreboard objectives add mob_ctrl_e_guard dummy "Mob Control Elder_Guardian"
 scoreboard objectives add mob_ctrl_ske_trp dummy "Mob Control Skeleton Traps"
-scoreboard objectives add mob_ctrl_swamps dummy "Mob Control Swamps"
 scoreboard objectives add mob_ctrl_zomb_re dummy "Mob Control Zombie Reinforcements Follow Rules"
 
 execute unless score admin mob_ctrl_copy_ho matches -2147483648..2147483647 run scoreboard players set admin mob_ctrl_copy_ho 1
 execute unless score admin mob_ctrl_e_guard matches -2147483648..2147483647 run scoreboard players set admin mob_ctrl_e_guard 1
 execute unless score admin mob_ctrl_ske_trp matches -2147483648..2147483647 run scoreboard players set admin mob_ctrl_ske_trp 1
-execute unless score admin mob_ctrl_swamps matches -2147483648..2147483647 run scoreboard players set admin mob_ctrl_swamps 1
 execute unless score admin mob_ctrl_zomb_re matches -2147483648..2147483647 run scoreboard players set admin mob_ctrl_zomb_re 1
 
 # Trigger Scores
