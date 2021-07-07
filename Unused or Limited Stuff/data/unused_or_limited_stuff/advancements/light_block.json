@@ -1,0 +1,25 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "block": "minecraft:glow_ink_sac"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_block"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "unused_or_limited_stuff:light_block"
+        ]
+    }
+}

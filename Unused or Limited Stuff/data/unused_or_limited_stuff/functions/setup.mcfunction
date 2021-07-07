@@ -12,11 +12,9 @@ execute unless score admin uls_killer_bunny matches -2147483648..2147483647 run 
 execute unless score admin uls_end_gateway matches -2147483648..2147483647 run scoreboard players set admin uls_end_gateway 1
 
 # Trigger Objectives
-scoreboard objectives add set_frame_visibl trigger "Set Frame Visible"
-scoreboard objectives add set_frame_invisi trigger "Set Frame Invisible"
-scoreboard objectives add set_frame_fixed trigger "Set Frame Fixed"
-scoreboard objectives add set_frame_nonfix trigger "Set Frame Non-Fixed"
-scoreboard objectives add set_frame_fixinv trigger "Set Frame Fixed and Invisible"
+scoreboard objectives add frame_invisible trigger "Set Frame Invisible"
+scoreboard objectives add frame_fixed trigger "Set Frame Fixed"
+scoreboard objectives add frame_fixd_invis trigger "Set Frame Fixed and Invisible"
 
 # Other Objectives
 scoreboard objectives add killed_enderdrgn minecraft.killed:minecraft.ender_dragon "Killed Ender Dragon"
@@ -24,3 +22,6 @@ scoreboard objectives add zombiehorseticks dummy "Zombie Horse Ticks"
 
 scoreboard objectives add uls_tick dummy "Unused or Limited Stuff Tick"
 scoreboard players add dummy uls_tick 0
+
+scoreboard objectives add light_block_tick dummy "Light Block Particle Tick"
+scoreboard players add dummy light_block_tick 0

@@ -1,0 +1,9 @@
+execute positioned ~ ~-4 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~-3 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~-2 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~-1 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~ ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~1 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~2 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~3 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
+execute positioned ~ ~4 ~ run function unused_or_limited_stuff:find_light_blocks/main_z
