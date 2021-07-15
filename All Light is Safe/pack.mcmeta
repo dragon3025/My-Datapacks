@@ -1,0 +1,6 @@
+{
+        "pack": {
+                "pack_format": 7,
+                "description": "Stops most overworld hostile mobs from spawning in light level 1 or higher."
+        }
+}
