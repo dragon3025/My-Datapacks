@@ -1,4 +1,4 @@
-scoreboard objectives add spwn_blcker_tick dummy "Light Level Display Tick Timer"
+scoreboard objectives add spwn_blcker_tick dummy "Spawn Blocking Beacons Tick Timer"
 scoreboard objectives add raider_wave_num dummy "Rainer Wave Number"
 
 scoreboard objectives add spwn_blcker_set dummy "Set Beacon To Despawn"
