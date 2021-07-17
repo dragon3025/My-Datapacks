@@ -1,3 +1,2 @@
-scoreboard players add dummy safer_light_tick 1
-execute if score dummy safer_light_tick matches 20.. run function safer_light:loop_timed
-execute if score dummy safer_light_tick matches 20.. run scoreboard players set dummy safer_light_tick 0
+execute as @e[type=#safer_light:hostile, predicate=safer_light:overworld, tag=!light_check] at @s run function safer_light:check_light
+tag @e[type=#safer_light:hostile, tag=!light_check] add light_check
