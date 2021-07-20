@@ -4,7 +4,6 @@
         "#minecraft:raiders",
         "#minecraft:skeletons",
         "minecraft:blaze",
-        "minecraft:cave_spider",
         "minecraft:creeper",
         "minecraft:drowned",
         "minecraft:enderman",
@@ -18,9 +17,7 @@
         "minecraft:phantom",
         "minecraft:piglin",
         "minecraft:slime",
-        "minecraft:spider",
         "minecraft:zombie",
-        "minecraft:zombie_villager",
-        "minecraft:zombified_piglin"
+        "minecraft:zombie_villager"
     ]
 }

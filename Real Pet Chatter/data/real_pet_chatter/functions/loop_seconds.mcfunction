@@ -26,5 +26,18 @@ execute as @e[tag=chatting_pet, scores={pet_chatter_cool=1..}, tag=!no_chat] run
 execute as @e[tag=chatting_pet, scores={pet_chatter_cool=..0}, tag=!silenced, tag=no_chat] run data merge entity @s {Silent:false}
 execute as @e[tag=chatting_pet, scores={pet_chatter_cool=..0}, tag=!silenced, tag=no_chat] run tag @s remove no_chat
 
+#Only pets with owners will chat
 execute as @e[type=#real_pet_chatter:pets_with_owner_data] unless entity @s[scores={rpc_has_owner=1}] store success score @s rpc_has_owner run data get entity @s Owner
 execute as @e[type=#real_pet_chatter:pets, tag=!chatting_pet, nbt=!{Tame:false}] at @s unless entity @s[type=#real_pet_chatter:pets_with_owner_data, scores={rpc_has_owner=0}] run function real_pet_chatter:set_pet_for_chatting
+
+#Decide what mobs make pets angry
+tag @e[type=#real_pet_chatter:hostile, tag=!real_pet_chatter_hostile] add real_pet_chatter_hostile
+
+tag @e[type=minecraft:zombified_piglin, nbt=!{AngerTime:0}, tag=!real_pet_chatter_hostile] add real_pet_chatter_hostile
+tag @e[type=minecraft:zombified_piglin, nbt={AngerTime:0}, tag=real_pet_chatter_hostile] remove real_pet_chatter_hostile
+
+execute as @e[type=spider, tag=!real_pet_chatter_hostile] at @s if predicate real_pet_chatter:hostile_spider_light_levels run tag @s add real_pet_chatter_hostile
+execute as @e[type=spider, tag=real_pet_chatter_hostile] at @s unless predicate real_pet_chatter:hostile_spider_light_levels run tag @s remove real_pet_chatter_hostile
+
+execute as @e[type=cave_spider, tag=!real_pet_chatter_hostile] at @s if predicate real_pet_chatter:hostile_cave_spider_light_levels run tag @s add real_pet_chatter_hostile
+execute as @e[type=cave_spider, tag=real_pet_chatter_hostile] at @s unless predicate real_pet_chatter:hostile_cave_spider_light_levels run tag @s remove real_pet_chatter_hostile

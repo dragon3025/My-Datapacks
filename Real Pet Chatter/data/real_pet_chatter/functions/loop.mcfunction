@@ -6,10 +6,10 @@ execute if score dummy rp_chatter_tick matches 20.. run scoreboard players set d
 #Dogs make angry sounds when angry
 execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt=!{AngerTime:0}] at @s run function real_pet_chatter:angry_dogs
 #Dogs make angry sounds when hostiles nearby unless it's already making sounds from being angry
-execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt={AngerTime:0}] at @s if entity @e[type=#real_pet_chatter:hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:angry_dogs
+execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt={AngerTime:0}] at @s if entity @e[tag=real_pet_chatter_hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:angry_dogs
 
 #Cats make angry sounds when hostiles nearby
-execute if score admin mobs_anger_cats matches 1.. as @e[type=cat] at @s if entity @e[type=#real_pet_chatter:hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:angry_cats
+execute if score admin mobs_anger_cats matches 1.. as @e[type=cat] at @s if entity @e[tag=real_pet_chatter_hostile, distance=..16, nbt={PersistenceRequired:false}] run function real_pet_chatter:angry_cats
 
 #Pets switch off of cooldown when hurt
 execute if score admin uni_rp_chatter matches ..0 as @e[tag=chatting_pet] store result score @s rp_chat_health run data get entity @s Health
