@@ -18,5 +18,5 @@ kill @s[predicate=light_lv:location/water, predicate=light_lv:location/ocean_mon
 execute as @s at @s positioned ~ ~-1 ~ if predicate light_lv:hostile_block_check/failed_surfaces run kill @s
 
 #Safer Light Level Compatiblity
-execute if score dummy safer_lt_instald matches 1 run kill @s[predicate=!safer_light:above_ground, predicate=safer_light:light_safe, predicate=safer_light:overworld]
-execute if score dummy safer_lt_instald matches 1 run kill @s[predicate=safer_light:above_ground, predicate=safer_light:light_safe_surface, predicate=safer_light:overworld]
+execute if score dummy safer_lt_instald matches 1 run kill @s[predicate=!safer_light:above_ground, predicate=safer_light:light_safe, predicate=safer_light:overworld, predicate=!safer_light:hostile_spawnable_structures]
+execute if score dummy safer_lt_instald matches 1 run kill @s[predicate=safer_light:above_ground, predicate=safer_light:light_safe_surface, predicate=safer_light:overworld, predicate=!safer_light:hostile_spawnable_structures]
