@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 7,
+                "pack_format": 8,
                 "description": "Overhauls the way horse stats are calculated to make breeding more worth it."
         }
 }
