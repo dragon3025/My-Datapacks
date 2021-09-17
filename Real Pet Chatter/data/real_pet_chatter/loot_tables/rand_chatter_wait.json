@@ -1,0 +1,37 @@
+{
+    "pools": [
+      {
+        "rolls": {
+          "min": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "admin"
+            },
+            "score": "min_chatter_wait"
+          },
+          "max": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "admin"
+            },
+            "score": "max_chatter_wait"
+          }
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

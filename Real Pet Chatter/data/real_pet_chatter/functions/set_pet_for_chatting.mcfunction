@@ -1,4 +1,2 @@
-scoreboard players operation @s math_input1 = admin min_pet_chatter
-scoreboard players operation @s math_input2 = admin max_pet_chatter
-execute as @s run function real_pet_chatter:math/random_chatter
+execute store result score @s pet_chatter_time run loot spawn ~ -128 ~ loot real_pet_chatter:rand_pet_chatter
 tag @s add chatting_pet
