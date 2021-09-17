@@ -2,7 +2,7 @@
 execute if score admin mob_ctrl_ske_trp matches 1.. as @e[type=minecraft:skeleton_horse, nbt={SkeletonTrap: true}] at @s run data merge entity @s {SkeletonTrapTime: 1}
 
 # Send repelled mobs to the void
-execute as @e[tag=repel_mob] at @s run tp @s ~ -80 ~
+execute as @e[tag=repel_mob] at @s run tp @s ~ -228 ~
 
 # As soon as a horse is tamed, you have 10 seconds to copy its stats
 execute as @e[type=horse, nbt={Tame:true}] unless entity @s[scores={c_horse_stat_sec=61..}] run scoreboard players add @s c_horse_stat_sec 1
