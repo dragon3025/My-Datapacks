@@ -1,0 +1,6 @@
+{
+       "pack": {
+           "pack_format": 7,
+           "description": "Sets Mob Griefing to false just before creepers explode, sets it back to true a few seconds later."
+       }
+}
