@@ -1,4 +1,4 @@
-execute as @e[tag=chatting_mob, tag=!silenced] run data merge entity @s {Silent:false}
+execute as @e[tag=chatting_mob, name=!"silenced"] run data merge entity @s {Silent:false}
 
 tag @e remove no_chat
 tag @e remove chatting_mob
@@ -15,4 +15,4 @@ scoreboard objectives remove rpc_prev_health
 scoreboard objectives remove rpc_has_owner
 scoreboard objectives remove rpc_has_rider
 
-tellraw @s {"text": "Real Pet Chatter uninstalled. You can now disable or remove the datapack. If there were mobs that weren't loaded when this command was used, they are silenced, and have the following tags left on them: 'no_chat' and 'chatting_mob'. You can fix them with /tag command and '/data merge entity @s {Silent:false}'", "color": "red"}
+tellraw @s {"text": "Real Pet Chatter uninstalled. You can now disable or remove the datapack. If there were mobs that weren't loaded when this command was used, they are muted, and have the following tags left on them: 'no_chat' and 'chatting_mob'. You can fix them with /tag command and '/data merge entity @s {Silent:false}'", "color": "red"}

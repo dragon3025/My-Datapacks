@@ -34,16 +34,19 @@ execute as @e[tag=chatting_mob] at @s if entity @e[tag=real_pet_chatter_hostile,
 #Set chatter time to limit when player is very far
 execute as @e[tag=chatting_mob] at @s unless entity @p[distance=..128] run scoreboard players operation @s pet_chatter_time = @s pet_chatter_limit
 
+tag @e[name="silenced"] add silenced
+tag @e[name="un_silenced"] remove silenced
+
 #Don't mute pets that you're watching
-execute as @a at @s anchored eyes facing entity @e[distance=..16, tag=chatting_mob, tag=!silenced, limit=1, sort=nearest] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run tag @e[distance=..16, tag=chatting_mob, tag=!silenced, limit=1, sort=nearest] add real_pet_chatter_viewed_pet
+execute as @a at @s anchored eyes facing entity @e[distance=..16, tag=chatting_mob, name=!"silenced", limit=1, sort=nearest] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.3] run tag @e[distance=..16, tag=chatting_mob, name=!"silenced", limit=1, sort=nearest] add real_pet_chatter_viewed_pet
 
 #Toggle Chatting Status unless the mob has silenced tag from other datapacks
 execute as @e[tag=!real_pet_chatter_viewed_pet, tag=chatting_mob, scores={pet_chatter_time=..0}, tag=!no_chat] run data merge entity @s {Silent:true}
 execute as @e[tag=!real_pet_chatter_viewed_pet, tag=chatting_mob, scores={pet_chatter_time=..0}, tag=!no_chat] run tag @s add no_chat
-execute as @e[tag=chatting_mob, scores={pet_chatter_time=1..}, tag=!silenced, tag=no_chat] run data merge entity @s {Silent:false}
-execute as @e[tag=chatting_mob, scores={pet_chatter_time=1..}, tag=!silenced, tag=no_chat] run tag @s remove no_chat
-execute as @e[tag=real_pet_chatter_viewed_pet, tag=!silenced, tag=no_chat] run data merge entity @s {Silent:false}
-execute as @e[tag=real_pet_chatter_viewed_pet, tag=!silenced, tag=no_chat] run tag @s remove no_chat
+execute as @e[tag=chatting_mob, scores={pet_chatter_time=1..}, name=!"silenced", tag=!silenced, tag=no_chat] run data merge entity @s {Silent:false}
+execute as @e[tag=chatting_mob, scores={pet_chatter_time=1..}, name=!"silenced", tag=!silenced, tag=no_chat] run tag @s remove no_chat
+execute as @e[tag=real_pet_chatter_viewed_pet, name=!"silenced", tag=!silenced, tag=no_chat] run data merge entity @s {Silent:false}
+execute as @e[tag=real_pet_chatter_viewed_pet, name=!"silenced", tag=!silenced, tag=no_chat] run tag @s remove no_chat
 
 #Only pets with owners will chat
 execute as @e[type=#real_pet_chatter:pets_with_owner_data] unless entity @s[scores={rpc_has_owner=1}] store success score @s rpc_has_owner run data get entity @s Owner
