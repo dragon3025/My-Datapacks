@@ -4,7 +4,3 @@ execute if score dummy mob_control_tick matches 20.. run scoreboard players set 
 
 # Enable Trigger Objectives
 execute if score admin mob_ctrl_copy_ho matches 1.. run scoreboard players enable @a copy_horse_stats
-
-# Despawn reinforcements that break normal spawning rules
-execute as @e[type=#mob_control:zombie_variant, tag=!reinforcement_safe] at @s unless entity @s[nbt={PersistenceRequired:true}] run tag @s add reinforcement_safe
-execute if score admin mob_ctrl_zomb_re matches 1.. as @e[type=#mob_control:zombie_variant, tag=!reinforcement_safe] at @s run function mob_control:reinforcement_check

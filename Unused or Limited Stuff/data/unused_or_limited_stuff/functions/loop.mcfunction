@@ -8,7 +8,7 @@ scoreboard players enable @a frame_fixd_invis
 scoreboard players enable @a find_light_blcks
 
 # Transform Evoker to Illusioner by hitting it with Dragon Breath
-execute if score admin uls_illusioner matches 1.. as @e[type=minecraft:evoker, nbt={HurtTime:10s}] at @s if entity @e[type=minecraft:player,distance=..6,nbt={SelectedItem: {id: "minecraft:dragon_breath"}}] run function unused_or_limited_stuff:transform/illusioner
+execute if score admin uls_illusioner matches 1.. as @e[type=minecraft:pillager, nbt={HurtTime:10s}] at @s if entity @e[type=minecraft:player,distance=..6,nbt={SelectedItem: {id: "minecraft:dragon_breath"}}] run function unused_or_limited_stuff:transform/illusioner
 
 # Transform a Newly Tamed Horse to Zombie Horse by hitting it with Rotten Flesh
 execute if score admin uls_zombie_horse matches 1.. as @e[type=minecraft:horse, nbt={Tame:1b}] at @s run function unused_or_limited_stuff:transform/zombie_horse_test
