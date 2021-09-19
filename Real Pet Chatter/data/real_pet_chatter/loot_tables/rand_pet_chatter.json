@@ -8,7 +8,7 @@
               "type": "minecraft:fixed",
               "name": "admin"
             },
-            "score": "min_pet_chatter"
+            "score": "min_pet_chatter_seconds"
           },
           "max": {
             "type": "minecraft:score",
@@ -16,7 +16,7 @@
               "type": "minecraft:fixed",
               "name": "admin"
             },
-            "score": "max_pet_chatter"
+            "score": "max_pet_chatter_seconds"
           }
         },
         "entries": [
