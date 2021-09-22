@@ -1,7 +1,7 @@
-scoreboard players add dummy spwn_blcker_tick 1
+scoreboard players add timer spwn_blcker_tick 1
 
-execute if score dummy spwn_blcker_tick matches 5.. run function spawn_blockers:loop_timed
-execute if score dummy spwn_blcker_tick matches 5.. run scoreboard players set dummy spwn_blcker_tick 0
+execute if score timer spwn_blcker_tick matches 5.. run function spawn_blockers:loop_timed
+execute if score timer spwn_blcker_tick matches 5.. run scoreboard players set timer spwn_blcker_tick 0
 
 # Enable Trigger Objectives
 scoreboard players enable @a spawn_block_menu

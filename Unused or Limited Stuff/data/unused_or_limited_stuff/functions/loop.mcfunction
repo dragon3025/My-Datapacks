@@ -1,6 +1,6 @@
-scoreboard players add dummy uls_tick 1
-execute if score dummy uls_tick matches 20.. run function unused_or_limited_stuff:loop_seconds
-execute if score dummy uls_tick matches 20.. run scoreboard players set dummy uls_tick 0
+scoreboard players add timer uls_tick 1
+execute if score timer uls_tick matches 20.. run function unused_or_limited_stuff:loop_seconds
+execute if score timer uls_tick matches 20.. run scoreboard players set timer uls_tick 0
 
 scoreboard players enable @a frame_fixed
 scoreboard players enable @a frame_invisible

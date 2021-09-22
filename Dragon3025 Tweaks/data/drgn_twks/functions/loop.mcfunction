@@ -1,7 +1,7 @@
 # Second Timer
-scoreboard players add dummy dragon3025_tick 1
-execute if score dummy dragon3025_tick matches 20.. run function drgn_twks:loop_seconds
-execute if score dummy dragon3025_tick matches 20.. run scoreboard players set dummy dragon3025_tick 0
+scoreboard players add timer dragon3025_tick 1
+execute if score timer dragon3025_tick matches 20.. run function drgn_twks:loop_seconds
+execute if score timer dragon3025_tick matches 20.. run scoreboard players set timer dragon3025_tick 0
 
 # Water Buckets in Item Frames will refill cauldrons 2 blocks in front of them.
 execute if score admin dt_wbifr_caldron matches 1.. as @e[type=item_frame,nbt={Item:{id:"minecraft:water_bucket"}}] at @s run function drgn_twks:refill_cauldron

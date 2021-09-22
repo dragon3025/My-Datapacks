@@ -10,7 +10,6 @@ scoreboard objectives add copy_horse_stats trigger "Copy Horse Stats to Skeleton
 
 # Misc Scores
 scoreboard objectives add mob_control_tick dummy "Mob Control Tick"
-scoreboard players add dummy mob_control_tick 0
 
 scoreboard objectives add z_vill_conv_time dummy "Zombie Villager Conversion Time"
 scoreboard objectives add c_horse_stat_sec dummy "Copy Horse Stats Seconds"

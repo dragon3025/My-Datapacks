@@ -8,4 +8,3 @@ scoreboard objectives add spwn_blckr_gui dummy "Show Despawn Beacon Detection GU
 
 scoreboard objectives add spawn_block_menu trigger "Spawn Blocker Menu"
 
-scoreboard players add dummy spwn_blcker_tick 0

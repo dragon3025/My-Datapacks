@@ -21,7 +21,5 @@ scoreboard objectives add killed_enderdrgn minecraft.killed:minecraft.ender_drag
 scoreboard objectives add zombiehorseticks dummy "Zombie Horse Ticks"
 
 scoreboard objectives add uls_tick dummy "Unused or Limited Stuff Tick"
-scoreboard players add dummy uls_tick 0
 
 scoreboard objectives add light_block_tick dummy "Light Block Particle Tick"
-scoreboard players add dummy light_block_tick 0
