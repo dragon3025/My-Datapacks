@@ -1,5 +1,6 @@
 {
 	"values": [
-		"mob_control:setup"
+		"mob_control:setup",
+		"horse_tame_message:setup"
 	]
 }

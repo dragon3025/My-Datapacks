@@ -9,5 +9,3 @@ scoreboard players add @s hbsf_jump 100000
 execute store result entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base float 0.000005 run scoreboard players get @s hbsf_health
 execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base float 0.000005 run scoreboard players get @s hbsf_speed
 execute store result entity @s Attributes[{Name:"minecraft:horse.jump_strength"}].Base float 0.000005 run scoreboard players get @s hbsf_jump
-
-particle note ~ ~ ~ 0.5 0.5 0.5 1 100
