@@ -7,7 +7,7 @@
                 "items": [
                     {
                         "items": [
-                            "minecraft:snow_block"
+                            "minecraft:spore_blossom"
                         ]
                     }
                 ]
@@ -21,7 +21,7 @@
     ],
     "rewards": {
         "recipes": [
-            "drgn_twks:snowball_from_snow_block"
+            "farmable_lush_cave_plants:spore_blossom"
         ]
     }
 }
