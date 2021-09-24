@@ -8,7 +8,6 @@ execute as @s[tag=spawn_blocker_block_removed] run kill @s
 execute run data merge entity @s {Duration:1000000000}
 
 #Despawn Mobs
-    #General Hostile
 execute positioned ~-50.5 ~-50.5 ~-50.5 as @e[type=#spawn_blockers:hostile, tag=!safe_from_spawn_blocker, dx=100, dy=384, dz=100] at @s if entity @s[y=-64, dy=384] run playsound entity.player.hurt hostile @a ~ ~ ~
 execute positioned ~-50.5 ~-50.5 ~-50.5 as @e[type=#spawn_blockers:hostile, tag=!safe_from_spawn_blocker, dx=100, dy=384, dz=100] at @s if entity @s[y=-64, dy=384] run tp @s ~ -256 ~
 

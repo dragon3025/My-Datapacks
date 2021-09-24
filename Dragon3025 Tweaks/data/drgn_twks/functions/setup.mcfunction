@@ -1,6 +1,3 @@
-# Set scoreboard variables (these aren't ever changed, but are used for operations)
-scoreboard objectives add dragon3025_tick dummy "Dragon3025 Tweak Tick Timer"
-
 # Set Admin Objectives if not set
 scoreboard objectives add dt_dry_farmland dummy "Dry Farmland"
 scoreboard objectives add dt_melt_obsidian dummy "Melt Obsidian"

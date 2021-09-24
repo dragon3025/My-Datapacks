@@ -1,6 +1,4 @@
-scoreboard players add timer uls_tick 1
-execute if score timer uls_tick matches 20.. run function unused_or_limited_stuff:loop_seconds
-execute if score timer uls_tick matches 20.. run scoreboard players set timer uls_tick 0
+execute if score timer dragon3025_timer_tick matches 0 run function unused_or_limited_stuff:loop_seconds
 
 scoreboard players enable @a frame_fixed
 scoreboard players enable @a frame_invisible

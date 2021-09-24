@@ -1,7 +1,5 @@
 #Tick and Seconds
-scoreboard players add timer rp_chatter_tick 1
-execute if score timer rp_chatter_tick matches 20.. run function real_pet_chatter:loop_seconds
-execute if score timer rp_chatter_tick matches 20.. run scoreboard players set timer rp_chatter_tick 0
+execute if score timer dragon3025_timer_tick matches 0 run function real_pet_chatter:loop_seconds
 
 #Dogs make angry sounds when angry
 execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt=!{AngerTime:0}] at @s run function real_pet_chatter:angry_dogs

@@ -1,5 +1,4 @@
 # Set scoreboard variables (these aren't ever changed, but are used for operations)
-scoreboard objectives add hbsf_tick dummy "Horse Breeding Stat Tweaks Tick Timer"
 
 # Other Scores
 scoreboard objectives add hbsf_health dummy "Horse Health"

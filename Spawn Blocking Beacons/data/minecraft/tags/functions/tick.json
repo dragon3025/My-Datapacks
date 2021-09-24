@@ -1,5 +1,6 @@
 {
 "values":[
-	"spawn_blockers:loop"
+	"spawn_blockers:loop",
+	"dragon3025_timer:loop"
 	]
 }

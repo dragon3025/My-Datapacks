@@ -12,7 +12,6 @@ execute unless score admin mobs_anger_cats matches -2147483648..2147483647 run s
 execute unless score admin mobs_anger_dogs matches -2147483648..2147483647 run scoreboard players set admin mobs_anger_dogs 1
 
 #Other Scores
-scoreboard objectives add rp_chatter_tick dummy "Timer for seconds processing"
 scoreboard objectives add pet_chatter_time dummy "Time allowed for Pet Chatter (in Seconds)"
 scoreboard objectives add pet_chatter_limit dummy "Time limit allowed for Pet Chatter (in Seconds) randomly set from min + max"
 scoreboard objectives add rp_chat_health dummy "Pet Health"

@@ -16,7 +16,7 @@ execute as @e[type=#unused_or_limited_stuff:item_frame, nbt=!{Item:{}}] run data
 execute as @e[type=#unused_or_limited_stuff:item_frame, nbt={Fixed:1b}] at @s unless block ~ ~ ~ #unused_or_limited_stuff:air_or_water run data merge entity @s {Fixed:0b}
 
 # Locate Light Blocks
-execute as @a[nbt={SelectedItem:{id:"minecraft:light"}}] at @s if score dummy light_block_tick matches 0 align xyz run function unused_or_limited_stuff:find_light_blocks/main_x
+execute as @a[nbt={SelectedItem:{id:"minecraft:light"}}] at @s if score dummy light_block_second matches 0 align xyz run function unused_or_limited_stuff:find_light_blocks/main_x
 execute as @e[tag=light_block] at @s run particle light ~ ~ ~ 0.1 0.1 0.1 1 1
-scoreboard players add timer light_block_tick 1
-execute if score timer light_block_tick matches 2.. run scoreboard players set timer light_block_tick 0
+scoreboard players add timer light_block_second 1
+execute if score timer light_block_second matches 2.. run scoreboard players set timer light_block_second 0

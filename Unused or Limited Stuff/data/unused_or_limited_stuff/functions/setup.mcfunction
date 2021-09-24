@@ -20,6 +20,5 @@ scoreboard objectives add frame_fixd_invis trigger "Set Frame Fixed and Invisibl
 scoreboard objectives add killed_enderdrgn minecraft.killed:minecraft.ender_dragon "Killed Ender Dragon"
 scoreboard objectives add zombiehorseticks dummy "Zombie Horse Ticks"
 
-scoreboard objectives add uls_tick dummy "Unused or Limited Stuff Tick"
 
-scoreboard objectives add light_block_tick dummy "Light Block Particle Tick"
+scoreboard objectives add light_block_second dummy "Light Block Particle Second Timer"

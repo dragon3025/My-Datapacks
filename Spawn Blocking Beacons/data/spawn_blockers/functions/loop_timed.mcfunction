@@ -29,7 +29,6 @@ tag @a[tag=spawn_blocker_gui_off] remove spawn_blocker_gui
 
 
 #Detect Beacons
-    #Give detection status message
 execute as @a[scores={spwn_blcker_find=40}, tag=spawn_blocker_detected] run tellraw @s {"text": "You're within the range of a Spawn Blocker (now emitting beam for 10 seconds).", "color": "green"}
 execute as @a[scores={spwn_blcker_find=40}, tag=spawn_blocker_detected, tag=anti_spawn_blocker_detected] run tellraw @s {"text": "You're also within the range of a Anti Spawn Blocker.", "color": "red"}
 execute as @a[scores={spwn_blcker_find=40}, tag=!spawn_blocker_detected] run tellraw @s {"text": "You're not within the range of a despawning beacon.", "color": "red"}
