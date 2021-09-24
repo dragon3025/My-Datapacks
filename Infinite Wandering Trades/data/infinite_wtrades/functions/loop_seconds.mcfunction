@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:wandering_trader] run function infinite_wtrades:reset_trade_uses
