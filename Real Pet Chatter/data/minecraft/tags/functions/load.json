@@ -1,6 +1,7 @@
 {
 	"values": [
 		"real_pet_chatter:setup",
-		"dragon3025_timer:setup"
+		"real_pet_chatter:tick",
+		"real_pet_chatter:second"
 	]
 }

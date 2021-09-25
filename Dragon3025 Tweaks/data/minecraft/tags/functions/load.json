@@ -1,6 +1,7 @@
 {
 	"values": [
 		"drgn_twks:setup",
-		"dragon3025_timer:setup"
+		"drgn_twks:tick",
+		"drgn_twks:second"
 	]
 }

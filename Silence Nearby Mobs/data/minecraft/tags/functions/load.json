@@ -1,5 +1,5 @@
 {
-    "values": [
-		"dragon3025_timer:setup"
-    ]
+  "values": [
+    "silence_nearby_mobs:second"
+  ]
 }

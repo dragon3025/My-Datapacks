@@ -1,6 +1,7 @@
 {
 	"values": [
-		"mob_control:setup",
-		"dragon3025_timer:setup"
+		"horse_tame_message:second",
+		"mob_control:tick",
+		"mob_control:second"
 	]
 }

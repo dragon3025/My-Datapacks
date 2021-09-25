@@ -1,5 +1,6 @@
 {
 	"values": [
-		"dragon3025_timer:setup"
+		"infinite_cauldrons:5_ticks",
+		"infinite_cauldrons:second"
 	]
 }
