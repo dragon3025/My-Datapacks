@@ -1,0 +1,35 @@
+All: Datapack MCMeta Updated
+
+	Dragon3025  Tweaks:
+*	Removed stone to cobblestone recipe
+*	Removed TNT Bedrock destroying (Bedrock destroying methods are now easier and 100% successful when performed correctly).
+*	Transfered infinite Cauldron feature from this pack into its own pack, which is now powered by Kelp.
+
+	Horse Breeding Stat Fix:
+*	Removed debugging particle that was accidentally left it.
+
+	Mob Control:
+*	Zombie Reinforcement restricting features removed
+*	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
+
+	Real Pet Chatter
+*	Optimized Randomization
+*	Overhauled the entire system. Now there is only 1 timer. It counts down except when certain events cause the timer to count up instead. Some events cause the timer to count all the way up to the limit. If the timer reaches 0, a new random limit is decided. Mobs will only make sound if the timer is above 0 or if a nearby player is looking at it.
+*	When increasing there's a 20% chance for both increase by 2 and 0 for variance.
+*	Reduced the range for angry mob sounds from 8 to 4 (to help prevent them from getting angry at mobs that can't be seen).
+*	Uninstall function is more simple.
+*	Compatiblity issue fixes for Silence Mobs and Silence Nearby Mobs Datapacks
+
+	Spawn Blocking Beacon
+*	Remove compatiblity note about light level display (because that pack was removed)
+
+	Unused or Limited Stuff
+*	Taming horses no longer emit heart particles.
+*	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
+
+	(NEW) Infinite Cauldrons
+*	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
+
+	(NEW) Farmable Lush Cave Plants
+*	You can now craft 1 Small Drip Leaf out of 1 Big Drip Leaf
+*	You can now craft 2 Spore Blossoms out of 1 Spore Blossom + 4 Bonemeal
