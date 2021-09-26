@@ -3,7 +3,7 @@ All: Datapack MCMeta Updated
 	Dragon3025  Tweaks:
 *	Removed stone to cobblestone recipe
 *	Removed TNT Bedrock destroying (Bedrock destroying methods are now easier and 100% successful when performed correctly).
-*	Transfered infinite Cauldron feature from this pack into its own pack, which is now powered by Kelp.
+*	Transfered Bell Raider Finding, Infinite Cauldron Water, and Rabbit Fall Damage Immunity features into their own packs.
 *	Removed obsidian melting. It was created to fix accidental obsidian flooding around builds, but this isn't a common thing and the function is a little overpowered.
 *	Optimized Function Timer System.
 
@@ -34,9 +34,16 @@ All: Datapack MCMeta Updated
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
 *	Optimized Function Timer System.
 
-	(NEW) Infinite Cauldrons
-*	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
+	(NEW) Bell Finds All Raiders
+*	Ringing a bell will give glowing to all Raider mobs that are currently in a Raid.
 
 	(NEW) Farmable Lush Cave Plants
 *	You can now craft 1 Small Drip Leaf out of 1 Big Drip Leaf
 *	You can now craft 2 Spore Blossoms out of 1 Spore Blossom + 4 Bonemeal
+
+	(NEW) Infinite Cauldrons
+*	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
+
+	(NEW) Rabbits Don't Take Fall Damage
+*	Rabbits are immune to fall damage.
+*	Rabbits wont show landing particles when hitting the ground. This is due to the pack constantly telling the game that they've fallen 0 blocks. I don't think I can fix this.
