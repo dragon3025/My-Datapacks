@@ -1,6 +1,5 @@
 {
 	"type": "crafting_shapeless",
-	"group": "snowball",
 	"ingredients": [
 		{
 			"item": "minecraft:snow_block"

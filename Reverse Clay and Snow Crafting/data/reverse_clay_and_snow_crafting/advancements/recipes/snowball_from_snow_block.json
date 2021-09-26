@@ -21,7 +21,7 @@
     ],
     "rewards": {
         "recipes": [
-            "drgn_twks:snowball_from_snow_block"
+            "reverse_clay_and_snow_crafting:snowball_from_snow_block"
         ]
     }
 }

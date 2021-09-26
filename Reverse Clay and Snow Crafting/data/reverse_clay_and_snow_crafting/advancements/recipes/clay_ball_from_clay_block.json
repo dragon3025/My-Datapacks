@@ -6,7 +6,9 @@
             "conditions": {
                 "items": [
                     {
-                        "tag": "minecraft:logs"
+                        "items": [
+                            "minecraft:clay"
+                        ]
                     }
                 ]
             }
@@ -19,7 +21,7 @@
     ],
     "rewards": {
         "recipes": [
-            "drgn_twks:chest_from_logs"
+            "reverse_clay_and_snow_crafting:clay_ball_from_clay_block"
         ]
     }
 }
