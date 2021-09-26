@@ -1,8 +1,5 @@
 schedule function spawn_blockers:tick 1t
 
-# Enable Trigger Objectives
-scoreboard players enable @a spawn_block_menu
-
 # Despawn Gui
 execute as @e[tag=spawn_blocker] at @s positioned ~-50.5 ~-50.5 ~-50.5 run tag @a[tag=spawn_blocker_gui, dx=100, dy=384, dz=100] add spawn_blocker_gui_true
 execute as @e[tag=anti_spawn_blocker] at @s positioned ~-8.5 ~-0.5 ~-8.5 run tag @a[tag=spawn_blocker_gui, dx=16, dy=16, dz=16] add anti_spawn_blocker_gui_true

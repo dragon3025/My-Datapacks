@@ -17,7 +17,10 @@ execute as @a[scores={copy_horse_stats=1..}] at @s unless entity @e[type=#mob_co
 execute as @a[scores={copy_horse_stats=1..}, nbt={Inventory:[{id:"minecraft:ender_pearl"}]}] at @s run execute as @e[type=#mob_control:undead_horse,distance=..1,limit=1,sort=nearest] at @s if entity @e[type=horse, nbt={Tame:1b}, scores={c_horse_stat_sec=..60}, distance=..8] run function mob_control:copy_horse_stats
 execute as @a[scores={copy_horse_stats=1..}, nbt={Inventory:[{id:"minecraft:ender_pearl"}]}] at @s if entity @e[type=horse, nbt={Tame:1b}, scores={c_horse_stat_sec=..60}, distance=..8] run clear @s ender_pearl 1
 
-scoreboard players set @a[scores={copy_horse_stats=1..}] copy_horse_stats 0
+scoreboard players reset copy_horse_stats
+
+# Enable Trigger Objectives
+execute if score admin mob_ctrl_copy_ho matches 1.. run scoreboard players enable @a copy_horse_stats
 
 # Curing Zombie Villagers is much faster now
 execute as @e[type=zombie_villager] store result score @s z_vill_conv_time run data get entity @s ConversionTime

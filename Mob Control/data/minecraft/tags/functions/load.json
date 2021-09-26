@@ -1,7 +1,6 @@
 {
 	"values": [
 		"horse_tame_message:second",
-		"mob_control:tick",
 		"mob_control:second"
 	]
 }
