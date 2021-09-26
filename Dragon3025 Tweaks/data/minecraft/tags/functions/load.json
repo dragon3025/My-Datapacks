@@ -1,7 +1,6 @@
 {
 	"values": [
 		"drgn_twks:setup",
-		"drgn_twks:tick",
 		"drgn_twks:second"
 	]
 }

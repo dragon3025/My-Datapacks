@@ -4,13 +4,17 @@ All: Datapack MCMeta Updated
 *	Removed stone to cobblestone recipe
 *	Removed TNT Bedrock destroying (Bedrock destroying methods are now easier and 100% successful when performed correctly).
 *	Transfered infinite Cauldron feature from this pack into its own pack, which is now powered by Kelp.
+*	Removed obsidian melting. It was created to fix accidental obsidian flooding around builds, but this isn't a common thing and the function is a little overpowered.
+*	Optimized Function Timer System.
 
 	Horse Breeding Stat Fix:
 *	Removed debugging particle that was accidentally left it.
+*	Optimized Function Timer System.
 
 	Mob Control:
 *	Zombie Reinforcement restricting features removed
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
+*	Optimized Function Timer System.
 
 	Real Pet Chatter
 *	Optimized Randomization
@@ -18,14 +22,17 @@ All: Datapack MCMeta Updated
 *	When increasing there's a 20% chance for both increase by 2 and 0 for variance.
 *	Reduced the range for angry mob sounds from 8 to 4 (to help prevent them from getting angry at mobs that can't be seen).
 *	Uninstall function is more simple.
-*	Compatiblity issue fixes for Silence Mobs and Silence Nearby Mobs Datapacks
+*	Compatiblity issue fixes for Silence Mobs and Silence Nearby Mobs Datapacks.
+*	Optimized Function Timer System.
 
 	Spawn Blocking Beacon
-*	Remove compatiblity note about light level display (because that pack was removed)
+*	Remove compatiblity note about light level display (because that pack was removed).
+*	Optimized Function Timer System.
 
 	Unused or Limited Stuff
 *	Taming horses no longer emit heart particles.
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
+*	Optimized Function Timer System.
 
 	(NEW) Infinite Cauldrons
 *	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
