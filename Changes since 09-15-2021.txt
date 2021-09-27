@@ -8,6 +8,7 @@ All: Datapack MCMeta Updated
 *	Zombie Reinforcement restricting features removed
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
 *	Optimized Function Timer System.
+*	Skeleton Traps are no longer non-despawning.
 
 	Real Pet Chatter
 *	Optimized Randomization
