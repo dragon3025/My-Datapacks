@@ -1,8 +1,5 @@
 schedule function mob_control:second 1s
 
-# Send repelled mobs to the void
-execute as @e[tag=repel_mob] at @s run tp @s ~ -228 ~
-
 # As soon as a horse is tamed, you have 10 seconds to copy its stats
 execute as @e[type=horse, nbt={Tame:true}] unless entity @s[scores={c_horse_stat_sec=61..}] run scoreboard players add @s c_horse_stat_sec 1
 
@@ -18,7 +15,3 @@ scoreboard players reset copy_horse_stats
 
 # Enable Trigger Objectives
 execute if score admin mob_ctrl_copy_ho matches 1.. run scoreboard players enable @a copy_horse_stats
-
-# Curing Zombie Villagers is much faster now
-execute as @e[type=zombie_villager] store result score @s z_vill_conv_time run data get entity @s ConversionTime
-execute as @e[scores={z_vill_conv_time=2..}] run data merge entity @s {ConversionTime:1}
