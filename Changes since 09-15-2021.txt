@@ -9,6 +9,7 @@ All: Datapack MCMeta Updated
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
 *	Optimized Function Timer System.
 *	Skeleton Traps are no longer non-despawning.
+*	Transfered Faster Zombie Villager Curing into its own pack.
 
 	Real Pet Chatter
 *	Optimized Randomization
@@ -34,6 +35,9 @@ All: Datapack MCMeta Updated
 	(NEW) Farmable Lush Cave Plants
 *	You can now craft 1 Small Drip Leaf out of 1 Big Drip Leaf
 *	You can now craft 2 Spore Blossoms out of 1 Spore Blossom + 4 Bonemeal
+
+	(NEW) Fast Villager Curing
+*	The wait time after curing a Zombie Villager is now 1 second or less.
 
 	(NEW) Infinite Cauldrons
 *	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
