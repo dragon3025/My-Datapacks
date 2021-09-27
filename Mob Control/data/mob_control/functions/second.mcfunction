@@ -1,8 +1,5 @@
 schedule function mob_control:second 1s
 
-# Make it easier to find Skeleton Traps
-execute if score admin mob_ctrl_ske_trp matches 1.. as @e[type=minecraft:skeleton_horse, nbt={SkeletonTrap: true}] at @s run data merge entity @s {SkeletonTrapTime: 1}
-
 # Send repelled mobs to the void
 execute as @e[tag=repel_mob] at @s run tp @s ~ -228 ~
 
