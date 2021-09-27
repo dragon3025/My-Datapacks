@@ -1,8 +1,5 @@
 schedule function unused_or_limited_stuff:tick 1t
 
-# Transform a Newly Tamed Horse to Zombie Horse by hitting it with Rotten Flesh
-execute if score admin uls_zombie_horse matches 1.. as @e[type=minecraft:horse, nbt={Tame:1b}] at @s run function unused_or_limited_stuff:transform/zombie_horse_test
-
 # Prevent lag by disallowing changing too many item frames
 scoreboard players set @a[scores={frame_invisible=21..}] frame_invisible 20
 scoreboard players set @a[scores={frame_fixed=21..}] frame_fixed 20

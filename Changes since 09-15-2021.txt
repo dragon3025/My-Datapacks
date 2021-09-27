@@ -22,6 +22,7 @@ All: Datapack MCMeta Updated
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
 *	Optimized Function Timer System.
 *	Transfered Illusioner transforming into its own pack.
+*	Transfered Zombifying Horses into its own pack.
 
 	(NEW) Bell Finds All Raiders
 *	Ringing a bell will give glowing to all Raider mobs that are currently in a Raid.
@@ -48,3 +49,6 @@ All: Datapack MCMeta Updated
 	(NEW) Rabbits Don't Take Fall Damage
 *	Rabbits are immune to fall damage.
 *	Rabbits wont show landing particles when hitting the ground. This is due to the pack constantly telling the game that they've fallen 0 blocks. I don't think I can fix this.
+
+	(NEW) Zombify Horse
+*	Hit a newly Tamed horse withing 1 minute to transform it into a Zombie Horse.
