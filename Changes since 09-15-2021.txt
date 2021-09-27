@@ -4,13 +4,6 @@ All: Datapack MCMeta Updated
 *	Removed debugging particle that was accidentally left it.
 *	Optimized Function Timer System.
 
-	Mob Control:
-*	Zombie Reinforcement restricting features removed
-*	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
-*	Optimized Function Timer System.
-*	Skeleton Traps are no longer non-despawning.
-*	Transfered Faster Zombie Villager Curing into its own pack.
-
 	Real Pet Chatter
 *	Optimized Randomization
 *	Overhauled the entire system. Now there is only 1 timer. It counts down except when certain events cause the timer to count up instead. Some events cause the timer to count all the way up to the limit. If the timer reaches 0, a new random limit is decided. Mobs will only make sound if the timer is above 0 or if a nearby player is looking at it.
@@ -31,6 +24,9 @@ All: Datapack MCMeta Updated
 
 	(NEW) Bell Finds All Raiders
 *	Ringing a bell will give glowing to all Raider mobs that are currently in a Raid.
+
+	(NEW) Copy Horse stats
+*	For up to 1 minute after Taming a Horse, you can use a trigger command to copy the Horse's stats to a nearby Zombie Horse or Skeleton horse, at the cost of 1 Ender Pearl.
 
 	(NEW) Farmable Lush Cave Plants
 *	You can now craft 1 Small Drip Leaf out of 1 Big Drip Leaf
