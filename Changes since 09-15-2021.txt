@@ -21,6 +21,7 @@ All: Datapack MCMeta Updated
 *	Taming horses no longer emit heart particles.
 *	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
 *	Optimized Function Timer System.
+*	Transfered Illusioner transforming into its own pack.
 
 	(NEW) Bell Finds All Raiders
 *	Ringing a bell will give glowing to all Raider mobs that are currently in a Raid.
@@ -34,6 +35,9 @@ All: Datapack MCMeta Updated
 
 	(NEW) Fast Villager Curing
 *	The wait time after curing a Zombie Villager is now 1 second or less.
+
+	(NEW) Illusioner Transformation
+*	Hit a Pillager with Dragon's Breath to turn it into an Illusioner.
 
 	(NEW) Infinite Cauldrons
 *	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.

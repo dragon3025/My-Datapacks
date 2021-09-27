@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "Player Hurt Entity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:pillager"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "Player Hurt Entity"
+        ]
+    ]
+}
