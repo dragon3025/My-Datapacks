@@ -43,6 +43,9 @@ All: Datapack MCMeta Updated
 	(NEW) Infinite Cauldrons
 *	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
 
+	(NEW) Killer Bunny Transformation
+*	Hit an Endermite with Rabbit's Foot to turn it into a Killer Bunny.
+
 	(NEW) Reverse Clay and Snow Crafting
 *	Craft 4 Clay Balls from a Clay Block or 4 Snowballs from a Snow Block
 

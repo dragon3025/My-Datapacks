@@ -1,3 +1,3 @@
-execute as @s run summon minecraft:illusioner ~ ~ ~
-execute as @s run clear @p minecraft:dragon_breath 1
-execute as @s run tp @s ~ -128 ~
+summon minecraft:illusioner ~ ~ ~
+clear @p minecraft:dragon_breath 1
+tp @s ~ -128 ~
