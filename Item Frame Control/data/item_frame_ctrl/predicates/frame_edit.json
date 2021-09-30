@@ -5,7 +5,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-                "frame_invisible": {
+                "frame_fixed": {
                     "min": 1,
                     "max": 2147483647
                 }
@@ -15,7 +15,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-                "frame_fixd_invis": {
+                "frame_invisible": {
                     "min": 1,
                     "max": 2147483647
                 }

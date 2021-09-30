@@ -1,0 +1,7 @@
+{
+	"values": [
+		"item_frame_ctrl:setup",
+		"item_frame_ctrl:tick",
+		"item_frame_ctrl:second"
+	]
+}

@@ -23,6 +23,7 @@ All: Datapack MCMeta Updated
 *	Optimized Function Timer System.
 *	Transfered Illusioner transforming into its own pack.
 *	Transfered Zombifying Horses into its own pack.
+*	Removed Dragon Egg Feature
 
 	(NEW) Bell Finds All Raiders
 *	Ringing a bell will give glowing to all Raider mobs that are currently in a Raid.
@@ -39,6 +40,9 @@ All: Datapack MCMeta Updated
 
 	(NEW) Illusioner Transformation
 *	Hit a Pillager with Dragon's Breath to turn it into an Illusioner.
+
+	(NEW) Item Frame Control
+*	Set a Frame to Fixed, Invisible, or Both. Remove Frame's item to make the Frame visible. Any block in a Frame's space besides air or water will unfix it.
 
 	(NEW) Infinite Cauldrons
 *	Toss kelp into a Cauldron. The Kelp will be consumed, and the Cauldron will then become an infinite water source.
