@@ -1,12 +1,14 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_block": {
+        "has_item": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "block": "minecraft:glow_ink_sac"
+                        "items": [
+                            "minecraft:glow_ink_sac"
+                        ]
                     }
                 ]
             }
@@ -14,12 +16,12 @@
     },
     "requirements": [
         [
-            "has_block"
+            "has_item"
         ]
     ],
     "rewards": {
         "recipes": [
-            "unused_or_limited_stuff:light_block"
+            "light_block_craft_and_find:light_block"
         ]
     }
 }

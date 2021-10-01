@@ -6,7 +6,6 @@ scoreboard players set @a[scores={spawn_block_menu=2}] spwn_blcker_set 1
 scoreboard players set @a[scores={spawn_block_menu=3}] anti_s_blckr_set 1
 scoreboard players set @a[scores={spawn_block_menu=4}] spwn_blcker_find 40
 scoreboard players set @a[scores={spawn_block_menu=5}] spwn_blckr_gui 1
-scoreboard players reset @a spawn_block_menu
 scoreboard players enable @a spawn_block_menu
 
 #Create Spawn Blocker

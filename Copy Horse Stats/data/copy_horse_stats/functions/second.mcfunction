@@ -11,5 +11,4 @@ execute as @a[scores={copy_horse_stats=1..}] at @s unless entity @e[type=#copy_h
 execute as @a[scores={copy_horse_stats=1..}, nbt={Inventory:[{id:"minecraft:ender_pearl"}]}] at @s run execute as @e[type=#copy_horse_stats:undead_horse,distance=..1,limit=1,sort=nearest] at @s if entity @e[type=horse, nbt={Tame:1b}, scores={c_horse_stat_sec=..60}, distance=..8] run function copy_horse_stats:copy_horse_stats
 execute as @a[scores={copy_horse_stats=1..}, nbt={Inventory:[{id:"minecraft:ender_pearl"}]}] at @s if entity @e[type=horse, nbt={Tame:1b}, scores={c_horse_stat_sec=..60}, distance=..8] run clear @s ender_pearl 1
 
-scoreboard players reset copy_horse_stats
 scoreboard players enable @a copy_horse_stats
