@@ -1,37 +1,36 @@
 {
-    "pools": [
-      {
-        "rolls": {
-          "min": {
-            "type": "minecraft:score",
-            "target": {
-              "type": "minecraft:fixed",
-              "name": "admin"
-            },
-            "score": "min_pet_chatter_seconds"
+  "pools": [
+    {
+      "rolls": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "admin"
           },
-          "max": {
-            "type": "minecraft:score",
-            "target": {
-              "type": "minecraft:fixed",
-              "name": "admin"
-            },
-            "score": "max_pet_chatter_seconds"
-          }
+          "score": "min_pet_chatter_seconds"
         },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:stone",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 0
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "admin"
+          },
+          "score": "max_pet_chatter_seconds"
+        }
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
