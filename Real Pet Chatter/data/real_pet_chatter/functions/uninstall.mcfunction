@@ -10,9 +10,9 @@ scoreboard objectives remove mobs_anger_dogs
 scoreboard objectives remove rp_chatter_tick
 scoreboard objectives remove pet_chatter_time
 scoreboard objectives remove pet_chatter_limit
-scoreboard objectives remove rp_chat_health
-scoreboard objectives remove rpc_prev_health
-scoreboard objectives remove rpc_has_owner
-scoreboard objectives remove rpc_has_rider
+scoreboard objectives remove pet_health
+scoreboard objectives remove previous_pet_health
+scoreboard objectives remove has_owner
+scoreboard objectives remove has_rider
 
 tellraw @s {"text": "Real Pet Chatter uninstalled. You can now disable or remove the datapack. If there were mobs that weren't loaded when this command was used, they are muted, and have the following tags left on them: 'no_chat' and 'chatting_mob'. You can fix them with /tag command and '/data merge entity @s {Silent:false}'", "color": "red"}

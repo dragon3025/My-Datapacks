@@ -14,7 +14,7 @@ execute unless score admin mobs_anger_dogs matches -2147483648..2147483647 run s
 #Other Scores
 scoreboard objectives add pet_chatter_time dummy "Time allowed for Pet Chatter (in Seconds)"
 scoreboard objectives add pet_chatter_limit dummy "Time limit allowed for Pet Chatter (in Seconds) randomly set from min + max"
-scoreboard objectives add rp_chat_health dummy "Pet Health"
-scoreboard objectives add rpc_prev_health dummy "Pet Previous Health"
-scoreboard objectives add rpc_has_owner dummy "Has an Owner"
-scoreboard objectives add rpc_has_rider dummy "Has an Rider"
+scoreboard objectives add pet_health dummy "Pet Health"
+scoreboard objectives add previous_pet_health dummy "Pet Previous Health"
+scoreboard objectives add has_owner dummy "Has an Owner"
+scoreboard objectives add has_rider dummy "Has an Rider"

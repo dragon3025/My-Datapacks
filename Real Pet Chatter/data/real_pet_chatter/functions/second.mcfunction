@@ -51,8 +51,8 @@ execute as @e[tag=real_pet_chatter_viewed_pet, name=!"silenced", tag=!silenced, 
 execute as @e[tag=real_pet_chatter_viewed_pet, name=!"silenced", tag=!silenced, tag=no_chat] run tag @s remove no_chat
 
 #Only pets with owners will chat
-execute as @e[type=#real_pet_chatter:pets_with_owner_data] unless entity @s[scores={rpc_has_owner=1}] store success score @s rpc_has_owner run data get entity @s Owner
-execute as @e[type=#real_pet_chatter:pets, tag=!chatting_mob, nbt=!{Tame:false}] at @s unless entity @s[type=#real_pet_chatter:pets_with_owner_data, scores={rpc_has_owner=0}] run function real_pet_chatter:set_pet_for_chatting
+execute as @e[type=#real_pet_chatter:pets_with_owner_data] unless entity @s[scores={has_owner=1}] store success score @s has_owner run data get entity @s Owner
+execute as @e[type=#real_pet_chatter:pets, tag=!chatting_mob, nbt=!{Tame:false}] at @s unless entity @s[type=#real_pet_chatter:pets_with_owner_data, scores={has_owner=0}] run function real_pet_chatter:set_pet_for_chatting
 
 #Remove tags
 tag @e[tag=player_near] remove player_near

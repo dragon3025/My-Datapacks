@@ -9,9 +9,9 @@ execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt={AngerTi
 execute if score admin mobs_anger_cats matches 1.. as @e[type=cat] at @s if entity @e[tag=real_pet_chatter_hostile, distance=..4, nbt={PersistenceRequired:false}] run function real_pet_chatter:angry_cats
 
 #Pets quickly unmute when hurt, to prevent mobs from being quite when attacked
-execute as @e[tag=chatting_mob] store result score @s rp_chat_health run data get entity @s Health
-execute as @e[tag=chatting_mob, scores={rpc_prev_health=0..}] if score @s rp_chat_health < @s rpc_prev_health run function real_pet_chatter:damage_unmute
-execute as @e[tag=chatting_mob] run scoreboard players operation @s rpc_prev_health = @s rp_chat_health
+execute as @e[tag=chatting_mob] store result score @s pet_health run data get entity @s Health
+execute as @e[tag=chatting_mob, scores={previous_pet_health=0..}] if score @s pet_health < @s previous_pet_health run function real_pet_chatter:damage_unmute
+execute as @e[tag=chatting_mob] run scoreboard players operation @s previous_pet_health = @s pet_health
 
 #Allow pets to make noise no matter what chatting mode when a player is right up to them (this will allow sounds from pets you're riding)
 execute as @e[tag=chatting_mob] at @s if entity @p[distance=..1] run data merge entity @s {Silent:false}
