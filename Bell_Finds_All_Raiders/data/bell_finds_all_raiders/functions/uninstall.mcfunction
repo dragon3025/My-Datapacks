@@ -1,0 +1,4 @@
+schedule clear bell_finds_all_raiders:second
+
+scoreboard objectives remove raider_wave_num
+scoreboard objectives remove bell_rung

@@ -1,0 +1,7 @@
+schedule clear horse_breeding_stat_fix:second
+
+scoreboard objectives remove horse_breeding_stat_fix_health dummy
+scoreboard objectives remove horse_breeding_stat_fix_speed dummy
+scoreboard objectives remove horse_breeding_stat_fix_jump dummy
+
+tag @e remove wild_horse_check
