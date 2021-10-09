@@ -13,18 +13,6 @@ All: Datapack MCMeta Updated
 *	Compatiblity issue fixes for Silence Mobs and Silence Nearby Mobs Datapacks.
 *	Optimized Function Timer System.
 
-	Spawn Blocking Beacon
-*	Remove compatiblity note about light level display (because that pack was removed).
-*	Optimized Function Timer System.
-
-	Unused or Limited Stuff
-*	Taming horses no longer emit heart particles.
-*	You will receive a message when a horse is tamed, which helps know if you have an opportunity to transfer horse stats.
-*	Optimized Function Timer System.
-*	Transfered Illusioner transforming into its own pack.
-*	Transfered Zombifying Horses into its own pack.
-*	Removed Dragon Egg Feature
-
 	(NEW) Bell Finds All Raiders
 *	Ringing a bell will give glowing to all Raider mobs that are currently in a Raid.
 
@@ -35,11 +23,19 @@ All: Datapack MCMeta Updated
 *	You can now craft 1 Small Drip Leaf out of 1 Big Drip Leaf
 *	You can now craft 2 Spore Blossoms out of 1 Spore Blossom + 4 Bonemeal
 
+	(New) End Gateway Placer
+*	You can use Dragon's Breath to place/remove End Gateway blocks in all dimensions except The End.
+
 	(NEW) Fast Villager Curing
 *	The wait time after curing a Zombie Villager is now 1 second or less.
 
 	(NEW) Illusioner Transformation
 *	Hit a Pillager with Dragon's Breath to turn it into an Illusioner.
+
+	(NEW) Invisible Light
+*	Use Diamonds and Glow Item Frames to create an area of effect that dispawns mobs in a 15 block radius.
+*	Keeps water source if made in a water source.
+*	Hold light (light bulb shaped item) or use trigger command to reveal all hidden light for 10 seconds.
 
 	(NEW) Item Frame Control
 *	Set a Frame to Fixed, Invisible, or Both. Remove Frame's item to make the Frame visible. Any block in a Frame's space besides air or water will unfix it.
