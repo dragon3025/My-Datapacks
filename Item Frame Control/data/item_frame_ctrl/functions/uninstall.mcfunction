@@ -1,6 +1,6 @@
 scoreboard objectives remove frame_invisible
 scoreboard objectives remove frame_fixed
-scoreboard objectives remove frame_fixed_invisible trigger
+scoreboard objectives remove frame_fixed_invisible
 
 execute as @e[type=#item_frame_ctrl:item_frame] run data merge entity @s {Fixed:false, Invisible:false}
 execute as @e[type=#item_frame_ctrl:item_frame] run data merge entity @s {Invisible:false}
