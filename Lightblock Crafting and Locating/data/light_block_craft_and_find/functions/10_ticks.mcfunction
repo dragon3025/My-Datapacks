@@ -1,4 +1,8 @@
 schedule function light_block_craft_and_find:10_ticks 10t
 
-execute as @a[gamemode=!creative, nbt={SelectedItem:{id:"minecraft:light"}}] at @s positioned ^ ^ ^8 align xyz run function light_block_craft_and_find:find_light_blocks/main_x
+tag @a[gamemode=!creative, nbt={SelectedItem:{id:"minecraft:light"}}] add find_light_blocks
+tag @a[nbt={Inventory:[{Slot:-106b, id:"minecraft:light"}]}] add find_light_blocks
+execute as @a[tag=find_light_blocks] at @s positioned ^ ^ ^8 align xyz run function light_block_craft_and_find:find_light_blocks/main_x
+tag @a remove find_light_blocks
+
 execute as @e[tag=light_block] at @s run particle light ~ ~ ~ 0.1 0.1 0.1 1 1

@@ -1,7 +1,0 @@
-{
-	"values": [
-		"spawn_blockers:setup",
-		"spawn_blockers:tick",
-		"spawn_blockers:5_ticks"
-	]
-}

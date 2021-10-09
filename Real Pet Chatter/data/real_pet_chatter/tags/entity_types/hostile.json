@@ -8,15 +8,14 @@
         "minecraft:drowned",
         "minecraft:enderman",
         "minecraft:ghast",
-        "minecraft:ghast",
         "minecraft:guardian",
         "minecraft:hoglin",
         "minecraft:husk",
         "minecraft:magma_cube",
         "minecraft:phantom",
-        "minecraft:phantom",
         "minecraft:piglin",
         "minecraft:slime",
+        "minecraft:witch",
         "minecraft:zombie",
         "minecraft:zombie_villager"
     ]
