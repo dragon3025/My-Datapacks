@@ -33,9 +33,8 @@ All: Datapack MCMeta Updated
 *	Hit a Pillager with Dragon's Breath to turn it into an Illusioner.
 
 	(NEW) Invisible Light
-*	Use Diamonds and Glow Item Frames to create an area of effect that dispawns mobs in a 15 block radius.
-*	Keeps water source if made in a water source.
-*	Hold light (light bulb shaped item) or use trigger command to reveal all hidden light for 10 seconds.
+*	Use Diamonds named "i_light" and Glow Item Frames to create invisible light. It will blocks mobs spawns in a 15 block radius.
+*	Hold Light (light bulb shaped item) or Diamonds named "i_light" to reveal all invisible light for 10 seconds. Or use a trigger command to turn it on for 1 minute.
 
 	(NEW) Item Frame Control
 *	Set a Frame to Fixed, Invisible, or Both. Remove Frame's item to make the Frame visible. Any block in a Frame's space besides air or water will unfix it.
