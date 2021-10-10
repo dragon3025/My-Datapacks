@@ -3,6 +3,7 @@ All: Datapack MCMeta Updated
 	Horse Breeding Stat Fix:
 *	Removed debugging particle that was accidentally left it.
 *	Optimized Function Timer System.
+*	Made the system more exact. This also means that if a new baby's stats are very close to maximum, it can go over the max values by a tiny amount, but this pack will reduce them to the max values when they do.
 
 	Real Pet Chatter
 *	Optimized Randomization
