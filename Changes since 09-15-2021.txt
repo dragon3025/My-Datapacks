@@ -53,5 +53,9 @@ All: Datapack MCMeta Updated
 *	Rabbits are immune to fall damage.
 *	Rabbits wont show landing particles when hitting the ground. This is due to the pack constantly telling the game that they've fallen 0 blocks. I don't think I can fix this.
 
+	(NEW) Swap Tools
+*	Switch Hotbar/Selected with first row of Inventory/Ender Chest
+*	Rotate Selected with the first 3 Slots of your Ender Chest
+
 	(NEW) Zombify Horse
 *	Hit a newly Tamed horse withing 1 minute to transform it into a Zombie Horse.
