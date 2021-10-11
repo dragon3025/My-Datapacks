@@ -1,3 +1,7 @@
+Resource Pack:
+*	Horse Heart icon changed.
+*	Pumpkin Pie icon changed.
+
 All: Datapack MCMeta Updated
 
 	Horse Breeding Stat Fix:
