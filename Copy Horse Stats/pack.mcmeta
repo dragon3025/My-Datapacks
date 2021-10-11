@@ -1,6 +1,6 @@
 {
         "pack": {
                 "pack_format": 8,
-                "description": "Increase swamp Slime and Witch spawns. Copy horse stats to Skeleton or Zombie horses."
+                "description": "Copy horse stats to Skeleton or Zombie horses."
         }
 }

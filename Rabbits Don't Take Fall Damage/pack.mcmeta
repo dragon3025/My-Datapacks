@@ -1,6 +1,6 @@
 {
         "pack": {
                 "pack_format": 8,
-                "description": "..."
+                "description": "Prevents Rabbits taking fall damage."
         }
 }

@@ -1,6 +1,6 @@
 {
         "pack": {
                 "pack_format": 8,
-                "description": "Melt snow, turn obsidian back into lava, and dry up farmland. Also adds convenience recipes."
+                "description": "Turn Clay/Slime blocks back into ball form."
         }
 }

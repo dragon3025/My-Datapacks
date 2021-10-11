@@ -1,6 +1,6 @@
 {
         "pack": {
                 "pack_format": 8,
-                "description": "Reduces the frequency of non-hostile pet sounds."
+                "description": "Reduces the frequency of non-hostile pet sounds. Can set dogs and cats to make angry sounds at hostiles."
         }
 }
