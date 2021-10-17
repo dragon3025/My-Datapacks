@@ -1,18 +1,22 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        " # ",
-        "#S#",
-        " # "
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "minecraft:bone_meal"
         },
-        "S": {
+        {
+            "item": "minecraft:bone_meal"
+        },
+        {
+            "item": "minecraft:bone_meal"
+        },
+        {
+            "item": "minecraft:bone_meal"
+        },
+        {
             "item": "minecraft:spore_blossom"
         }
-    },
+    ],
     "result": {
         "item": "minecraft:spore_blossom",
         "count": 2
