@@ -2,13 +2,6 @@ Resource Pack:
 *	Horse Heart icon changed.
 *	Pumpkin Pie icon changed.
 
-All: Datapack MCMeta Updated
-
-	Horse Breeding Stat Fix:
-*	Removed debugging particle that was accidentally left it.
-*	Optimized Function Timer System.
-*	Made the system more exact. This also means that if a new baby's stats are very close to maximum, it can go over the max values by a tiny amount, but this pack will reduce them to the max values when they do.
-
 	Real Pet Chatter
 *	Optimized Randomization
 *	Overhauled the entire system. Now there is only 1 timer. It counts down except when certain events cause the timer to count up instead. Some events cause the timer to count all the way up to the limit. If the timer reaches 0, a new random limit is decided. Mobs will only make sound if the timer is above 0 or if a nearby player is looking at it.
