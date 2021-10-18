@@ -1,3 +1,3 @@
 summon minecraft:rabbit ~ ~ ~ {RabbitType: 99}
-clear @p rabbit_foot 1
+tag @s add killer_bunny_transform
 tp @s ~ -128 ~
