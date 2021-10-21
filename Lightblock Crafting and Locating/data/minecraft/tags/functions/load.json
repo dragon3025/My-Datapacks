@@ -1,5 +1,6 @@
 {
 	"values": [
+		"light_block_craft_and_find:setup",
 		"light_block_craft_and_find:10_ticks"
 	]
 }
