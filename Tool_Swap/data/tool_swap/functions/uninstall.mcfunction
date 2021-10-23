@@ -1,0 +1,9 @@
+schedule clear tool_swap:tick
+
+scoreboard objectives remove swap_hotbar_with_inventory
+scoreboard objectives remove swap_hotbar_with_ender_chest
+scoreboard objectives remove rotate_hotbar_with_inventory
+scoreboard objectives remove rotate_hotbar_with_ender_chest
+scoreboard objectives remove swap_selected_with_inventory
+scoreboard objectives remove swap_selected_with_ender_chest
+scoreboard objectives remove swap_tools
