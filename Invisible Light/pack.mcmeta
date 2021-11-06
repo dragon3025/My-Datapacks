@@ -1,6 +1,0 @@
-{
-        "pack": {
-                "pack_format": 8,
-                "description": "Use a Diamond and Glow Item Frame to block Mob spawns in a 15-block radius. They can be temporarily revealed."
-        }
-}
