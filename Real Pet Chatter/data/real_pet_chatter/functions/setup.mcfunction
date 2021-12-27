@@ -18,3 +18,8 @@ scoreboard objectives add pet_health dummy "Pet Health"
 scoreboard objectives add previous_pet_health dummy "Pet Previous Health"
 scoreboard objectives add has_owner dummy "Has an Owner"
 scoreboard objectives add has_rider dummy "Has an Rider"
+scoreboard objectives add detect_traveled_pets_your_looking_at dummy "Distance traveled for detecting pets your looking at"
+
+#Trigger Scores
+scoreboard objectives add set_pet_to_be_always_chat trigger "Set Pet to Always Chat"
+scoreboard objectives add unset_pet_to_be_always_chat trigger "Unset Pet to Always Chat"
