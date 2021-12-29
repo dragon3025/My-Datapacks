@@ -24,12 +24,12 @@ execute if score admin mobs_anger_cats matches 1.. as @e[type=cat] at @s if enti
 
 #Pets quickly unmute when hurt, to prevent mobs from being quite when attacked
 execute as @e[tag=chatting_mob] store result score @s pet_health run data get entity @s Health
-execute as @e[tag=chatting_mob, scores={previous_pet_health=0..}] if score @s pet_health < @s previous_pet_health run function real_pet_chatter:damage_unmute
+execute as @e[tag=chatting_mob, scores={previous_pet_health=0..}, name=!"silenced", tag=!silenced] if score @s pet_health < @s previous_pet_health run function real_pet_chatter:damage_unmute
 execute as @e[tag=chatting_mob] run scoreboard players operation @s previous_pet_health = @s pet_health
 
 #Allow pets to make noise no matter what chatting mode when a player is right up to them (this will allow sounds from pets you're riding)
-execute as @e[tag=chatting_mob] at @s if entity @p[distance=..1] run data merge entity @s {Silent:false}
-execute as @e[tag=chatting_mob] at @s if entity @p[distance=..1] run tag @s remove no_chat
+execute as @e[tag=chatting_mob, name=!"silenced", tag=!silenced] at @s if entity @p[distance=..1] run data merge entity @s {Silent:false}
+execute as @e[tag=chatting_mob, name=!"silenced", tag=!silenced] at @s if entity @p[distance=..1] run tag @s remove no_chat
 
 #Don't mute pets that you're looking at
 execute as @a at @s run function real_pet_chatter:look_detection
