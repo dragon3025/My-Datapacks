@@ -14,7 +14,6 @@ execute as @e[tag=chair, tag=!activated_chair] at @s if entity @p[nbt={RootVehic
 
 execute as @e[tag=chair, tag=!activated_chair] at @s unless entity @p[distance=..2] run tag @s add kill_chair
 execute as @e[tag=activated_chair] at @s unless entity @p[nbt={RootVehicle:{Entity:{Tags:[chair]}}}, distance=..1] run tag @s add kill_chair
-execute as @e[tag=activated_chair] at @s unless entity @p[nbt={RootVehicle:{Entity:{Tags:[chair]}}}, distance=..1] run say hi
 execute as @e[tag=activated_chair] at @s unless entity @p[nbt={RootVehicle:{Entity:{Tags:[chair]}}}, distance=..1] run tp @p[limit=1, sort=nearest] ~ ~1.5 ~
 
 tp @e[tag=kill_chair] ~ -128 ~
