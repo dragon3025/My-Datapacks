@@ -1,0 +1,68 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "swap_tools": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "swap_hotbar_with_ender_chest": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "rotate_hotbar_with_ender_chest": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "swap_selected_with_ender_chest": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "swap_hotbar_with_inventory": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "rotate_hotbar_with_inventory": {
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "swap_selected_with_inventory": {
+                    "min": 1
+                }
+            }
+        }
+    ]
+}

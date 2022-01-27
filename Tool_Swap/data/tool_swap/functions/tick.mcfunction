@@ -16,24 +16,13 @@ tag @a[predicate=tool_swap:needs_ender_chest] add needs_ender_chest
 execute as @a[tag=needs_ender_chest] at @s if entity @e[type=item, nbt={Item:{id:"minecraft:ender_chest"}}, distance=..16] run tag @s remove needs_ender_chest
 
 # Don't need an Ender Chest if standing on the side of one
-execute as @a[tag=needs_ender_chest] at @s if block ~ ~ ~ ender_chest run tag @s remove needs_ender_chest
-execute as @a[tag=needs_ender_chest] at @s if block ~1 ~ ~ ender_chest run tag @s remove needs_ender_chest
-execute as @a[tag=needs_ender_chest] at @s if block ~-1 ~ ~ ender_chest run tag @s remove needs_ender_chest
-execute as @a[tag=needs_ender_chest] at @s if block ~ ~ ~1 ender_chest run tag @s remove needs_ender_chest
-execute as @a[tag=needs_ender_chest] at @s if block ~ ~ ~-1 ender_chest run tag @s remove needs_ender_chest
+execute as @a[tag=needs_ender_chest] at @s run function tool_swap:check_for_ender_chest_block
 
 # Tell player then need an Ender Chest
 tellraw @a[tag=needs_ender_chest] {"text": "You don't have an Ender Chest", "color": "red"}
 
 # Swapping Commands
-execute as @a[scores={swap_tools=1..}, tag=!needs_ender_chest] at @s run function tool_swap:swap_tools
-execute as @a[scores={swap_hotbar_with_ender_chest=1..}, tag=!needs_ender_chest] at @s run function tool_swap:swap_hotbar_with_ender_chest
-execute as @a[scores={rotate_hotbar_with_ender_chest=1..}, tag=!needs_ender_chest] at @s run function tool_swap:rotate_hotbar_with_ender_chest
-execute as @a[scores={swap_selected_with_ender_chest=1..}, tag=!needs_ender_chest] at @s run function tool_swap:swap_selected_with_ender_chest
-
-execute as @a[scores={swap_hotbar_with_inventory=1..}] at @s run function tool_swap:swap_hotbar_with_inventory
-execute as @a[scores={rotate_hotbar_with_inventory=1..}] at @s run function tool_swap:rotate_hotbar_with_inventory
-execute as @a[scores={swap_selected_with_inventory=1..}] at @s run function tool_swap:swap_selected_with_inventory
+execute as @a[predicate=tool_swap:used_swap_command] at @s run function tool_swap:use_trigger
 
 # Tag no longer needed
 tag @a remove needs_ender_chest

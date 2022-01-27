@@ -5,4 +5,4 @@ tag @a[nbt={Inventory:[{Slot:-106b, id:"minecraft:light"}]}] add find_light_bloc
 execute as @a[tag=find_light_blocks] at @s positioned ^ ^ ^8 align xyz run function light_block_craft_and_find:find_light_blocks/main_x
 tag @a remove find_light_blocks
 
-execute as @e[tag=light_block, limit=1000, sort=random] at @s run function light_block_craft_and_find:light_marker
+execute as @e[type=area_effect_cloud, tag=light_block, limit=1000, sort=random] at @s run function light_block_craft_and_find:light_marker

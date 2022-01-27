@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "#real_pet_chatter:hostile",
+        "minecraft:zombified_piglin",
+        "minecraft:spider",
+        "minecraft:cave_spider"
+    ]
+}
