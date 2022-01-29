@@ -29,8 +29,8 @@ execute as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob] a
 
 # Increase chat time if player is far (with variance)
 execute as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob, tag=player_far] unless score @s pet_chatter_time >= @s pet_chatter_limit run scoreboard players add @s pet_chatter_time 1
-execute as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob, tag=player_far] if predicate real_pet_chatter:chat_variance_chance unless score @s pet_chatter_time >= @s pet_chatter_limit run scoreboard players add @s pet_chatter_time 1
-execute as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob, tag=player_far, scores={pet_chatter_time=2..}] if predicate real_pet_chatter:chat_variance_chance run scoreboard players remove @s pet_chatter_time 1
+execute if predicate real_pet_chatter:chat_variance_chance as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob, tag=player_far] unless score @s pet_chatter_time >= @s pet_chatter_limit run scoreboard players add @s pet_chatter_time 1
+execute if predicate real_pet_chatter:chat_variance_chance as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob, tag=player_far, scores={pet_chatter_time=2..}] run scoreboard players remove @s pet_chatter_time 1
 
 # Decrease pet chatter time if player is near. Set new random limit if chat time hits 0.
 execute as @e[type=#real_pet_chatter:pets, tag=!always_chat, tag=chatting_mob, tag=!player_far, scores={pet_chatter_time=1}] at @s store result score @s pet_chatter_limit run loot spawn ~ -128 ~ loot real_pet_chatter:rand_pet_chatter
