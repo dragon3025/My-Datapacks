@@ -1,6 +1,6 @@
 {
         "pack": {
                 "pack_format": 8,
-                "description": "Silence any mob that walks on a 'silence_me' Name Tag."
+                "description": "Silence Mobs that are close to Item Frames with named Name Tags or use a trigger command."
         }
 }

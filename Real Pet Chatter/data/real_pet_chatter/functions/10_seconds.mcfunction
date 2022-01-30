@@ -1,10 +1,17 @@
 schedule function real_pet_chatter:10_seconds 10s
 
-# Decide what mobs are dangerous
-tag @e[type=#real_pet_chatter:hostile, tag=!real_pet_chatter_hostile] add real_pet_chatter_hostile
+## Decide what mobs are dangerous
+#Tag Persistent Mobs
+tag @e[type=#real_pet_chatter:neutral_or_hostile, tag=!persistent, nbt={PersistenceRequired:true}] add persistent
+tag @e[type=#real_pet_chatter:neutral_or_hostile, tag=persistent, nbt={PersistenceRequired:false}] remove persistent
 
-tag @e[type=minecraft:zombified_piglin, nbt=!{AngerTime:0}, tag=!real_pet_chatter_hostile] add real_pet_chatter_hostile
-tag @e[type=minecraft:zombified_piglin, nbt={AngerTime:0}, tag=real_pet_chatter_hostile] remove real_pet_chatter_hostile
+#Hostile
+tag @e[type=#real_pet_chatter:hostile, tag=!real_pet_chatter_hostile] add real_pet_chatter_hostile
+tag @e[type=#real_pet_chatter:hostile, tag=real_pet_chatter_hostile] add real_pet_chatter_hostile
+
+#Neutral
+tag @e[type=minecraft:zombified_piglin, tag=!real_pet_chatter_hostile, nbt=!{AngerTime:0}] add real_pet_chatter_hostile
+tag @e[type=minecraft:zombified_piglin, tag=real_pet_chatter_hostile, nbt={AngerTime:0}] remove real_pet_chatter_hostile
 
 execute as @e[type=spider, tag=!real_pet_chatter_hostile] at @s if predicate real_pet_chatter:hostile_spider_light_levels run tag @s add real_pet_chatter_hostile
 execute as @e[type=spider, tag=real_pet_chatter_hostile] at @s unless predicate real_pet_chatter:hostile_spider_light_levels run tag @s remove real_pet_chatter_hostile
@@ -12,6 +19,6 @@ execute as @e[type=spider, tag=real_pet_chatter_hostile] at @s unless predicate 
 execute as @e[type=cave_spider, tag=!real_pet_chatter_hostile] at @s if predicate real_pet_chatter:hostile_cave_spider_light_levels run tag @s add real_pet_chatter_hostile
 execute as @e[type=cave_spider, tag=real_pet_chatter_hostile] at @s unless predicate real_pet_chatter:hostile_cave_spider_light_levels run tag @s remove real_pet_chatter_hostile
 
-# Only pets with owners are affected
-execute as @e[type=#real_pet_chatter:pets_with_owner_data] unless entity @s[scores={has_owner=1}] store success score @s has_owner run data get entity @s Owner
-execute as @e[type=#real_pet_chatter:pets, tag=!chatting_mob, nbt=!{Tame:false}] at @s unless entity @s[type=#real_pet_chatter:pets_with_owner_data, scores={has_owner=0}] run function real_pet_chatter:set_pet_for_chatting
+## If a mob is given silenced name from another pack, it needs to be unset for controlled chat
+execute as @e[type=#real_pet_chatter:pets, tag=chatting_mob_v2, name="silenced"] run data merge entity @s {Silent: true}
+execute as @e[type=#real_pet_chatter:pets, tag=chatting_mob_v2, name="silenced"] run tag @s remove chatting_mob_v2

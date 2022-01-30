@@ -1,6 +1,6 @@
 {
         "pack": {
                 "pack_format": 8,
-                "description": "Reduces the frequency of non-hostile pet sounds. Can set dogs and cats to make angry sounds at hostiles."
+                "description": "Use a trigger command to set Pets to have controlled sound timing. Can set dogs and cats to make angry sounds at hostiles."
         }
 }

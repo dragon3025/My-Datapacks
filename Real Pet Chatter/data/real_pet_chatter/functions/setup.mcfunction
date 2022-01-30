@@ -16,10 +16,8 @@ scoreboard objectives add pet_chatter_time dummy "Time allowed for Pet Chatter (
 scoreboard objectives add pet_chatter_limit dummy "Time limit allowed for Pet Chatter (in Seconds) randomly set from min + max"
 scoreboard objectives add pet_health dummy "Pet Health"
 scoreboard objectives add previous_pet_health dummy "Pet Previous Health"
-scoreboard objectives add has_owner dummy "Has an Owner"
-scoreboard objectives add has_rider dummy "Has an Rider"
-scoreboard objectives add detect_traveled_pets_your_looking_at dummy "Distance traveled for detecting pets your looking at"
+scoreboard objectives add real_pet_chatter_look_detect_dist dummy "Real Pet Chatter Look Detection Distance"
 
 #Trigger Scores
-scoreboard objectives add set_pet_to_always_chat trigger "Set Pet to Always Chat"
-scoreboard objectives add unset_pet_to_always_chat trigger "Unset Pet to Always Chat"
+scoreboard objectives add set_mob_for_controlled_chat trigger "Set Mob For Controlled Chat"
+scoreboard objectives add unset_mob_for_controlled_chat trigger "Unset Mob For Controlled Chat"
