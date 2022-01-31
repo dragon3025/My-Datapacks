@@ -22,5 +22,3 @@ scoreboard objectives remove previous_pet_health
 scoreboard objectives remove real_pet_chatter_look_detect_dist
 scoreboard objectives remove set_mob_for_controlled_chat
 scoreboard objectives remove unset_mob_for_controlled_chat
-
-tellraw @s {"text": "All mobs that weren't close enought to players to be loaded when this command was used, may still be fixed. You can fix them by running this command again when nearby before uninstalling.", "color": "red"}
