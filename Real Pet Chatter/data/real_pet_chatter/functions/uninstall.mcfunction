@@ -8,6 +8,8 @@ execute as @e[type=#real_pet_chatter:pets, tag=chatting_mob_v2] run data merge e
 tag @e remove chatting_mob_v2
 tag @e remove persistent
 tag @e remove real_pet_chatter_hostile
+tag @e remove angry_pet
+tag @e remove angry_cat
 
 scoreboard objectives remove max_pet_chatter_seconds
 scoreboard objectives remove min_pet_chatter_seconds
