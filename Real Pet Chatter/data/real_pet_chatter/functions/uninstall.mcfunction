@@ -3,7 +3,7 @@ schedule clear real_pet_chatter:second
 schedule clear real_pet_chatter:10_seconds
 schedule clear real_pet_chatter:debug_view_chatting
 
-execute as @e[type=#real_pet_chatter:pets, tag=chatting_mob_v2] run data merge entity @s {Silent:false}
+execute as @e[type=#real_pet_chatter:noisy_mobs, tag=chatting_mob_v2] run data merge entity @s {Silent:false}
 
 tag @e remove chatting_mob_v2
 tag @e remove persistent

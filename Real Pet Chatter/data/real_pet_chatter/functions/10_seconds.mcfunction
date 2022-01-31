@@ -20,5 +20,5 @@ execute as @e[type=cave_spider, tag=!real_pet_chatter_hostile] at @s if predicat
 execute as @e[type=cave_spider, tag=real_pet_chatter_hostile] at @s unless predicate real_pet_chatter:hostile_cave_spider_light_levels run tag @s remove real_pet_chatter_hostile
 
 ## If a mob is given silenced name from another pack, it needs to be unset for controlled chat
-execute as @e[type=#real_pet_chatter:pets, tag=chatting_mob_v2, name="silenced"] run data merge entity @s {Silent: true}
-execute as @e[type=#real_pet_chatter:pets, tag=chatting_mob_v2, name="silenced"] run tag @s remove chatting_mob_v2
+execute as @e[type=#real_pet_chatter:noisy_mobs, tag=chatting_mob_v2, name="silenced"] run data merge entity @s {Silent: true}
+execute as @e[type=#real_pet_chatter:noisy_mobs, tag=chatting_mob_v2, name="silenced"] run tag @s remove chatting_mob_v2
