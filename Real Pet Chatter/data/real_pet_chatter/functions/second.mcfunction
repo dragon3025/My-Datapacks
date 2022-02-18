@@ -25,5 +25,5 @@ execute if score admin max_pet_chatter_seconds < admin min_pet_chatter_seconds r
 execute as @e[type=#real_pet_chatter:noisy_mobs, tag=chatting_mob_v2, name=!"silenced"] at @s run function real_pet_chatter:chatting_pet_second
 
 # Don't mute pets that you're looking at
-execute as @a at @s run function real_pet_chatter:look_detection
+execute as @a at @s anchored eyes run function real_pet_chatter:look_detection
 scoreboard players reset @a real_pet_chatter_look_detect_dist
