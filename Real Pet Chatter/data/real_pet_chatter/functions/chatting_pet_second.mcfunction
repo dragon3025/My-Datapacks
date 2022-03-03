@@ -7,7 +7,7 @@ execute as @s[scores={previous_pet_health=0..}] if score @s pet_health < @s prev
 scoreboard players operation @s previous_pet_health = @s pet_health
 
 # Tag mob if player is near
-execute unless entity @p[distance=..32] run tag @s add player_far
+execute unless entity @p[distance=..16] run tag @s add player_far
 
 # Increase chat time if player is far (with variance)
 execute as @s[tag=player_far] unless score @s pet_chatter_time >= @s pet_chatter_limit run scoreboard players add @s pet_chatter_time 1
