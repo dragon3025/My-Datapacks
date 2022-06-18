@@ -1,6 +1,6 @@
 {
     "pack": {
-        "pack_format": 8,
+        "pack_format":10,
         "description": "Toss Kelp into a Cauldron to prevent it from running out of water."
     }
 }

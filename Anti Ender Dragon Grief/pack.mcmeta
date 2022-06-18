@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
-                "description": "Prevents the Ender Dragon from destroying blocks. I recommend adding this after its 1st defeat. Compatible with Vanilla Tweak's Anti-Enderman Grief."
+                "pack_format":10,
+                "description": "§cOptional: disable until 1st kill§7. Works w/ Anti-Enderman Grief."
         }
 }

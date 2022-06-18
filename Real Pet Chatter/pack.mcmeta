@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
+                "pack_format":10,
                 "description": "Use a trigger command to set Pets to have controlled sound timing. Can set dogs and cats to make angry sounds at hostiles."
         }
 }

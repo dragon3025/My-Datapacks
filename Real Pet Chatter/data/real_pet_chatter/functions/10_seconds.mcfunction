@@ -7,7 +7,6 @@ tag @e[type=#real_pet_chatter:neutral_or_hostile, tag=persistent, nbt={Persisten
 
 #Hostile
 tag @e[type=#real_pet_chatter:hostile, tag=!real_pet_chatter_hostile] add real_pet_chatter_hostile
-tag @e[type=#real_pet_chatter:hostile, tag=real_pet_chatter_hostile] add real_pet_chatter_hostile
 
 #Neutral
 tag @e[type=minecraft:zombified_piglin, tag=!real_pet_chatter_hostile, nbt=!{AngerTime:0}] add real_pet_chatter_hostile

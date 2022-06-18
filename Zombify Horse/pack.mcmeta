@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
+                "pack_format":10,
                 "description": "Transform newly tamed Horses into Zombie Horses by hitting them with Rotten Flesh."
         }
 }

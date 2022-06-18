@@ -2,12 +2,12 @@ schedule function real_pet_chatter:second 1s
 
 ## Tag cats and dogs for Anger
 # Remove tag to redecide what pets are angry
-tag @e[type=#real_pet_chatter:noisy_mobs, tag=angry_pet] remove angry_pet
+tag @e[type=#real_pet_chatter:friendly, tag=angry_pet] remove angry_pet
 tag @e[type=cat, tag=angry_cat] remove angry_cat
 
 #Dogs
 execute if score admin mobs_anger_dogs matches 1.. as @e[type=wolf, nbt=!{AngerTime:0}] run tag @s add angry_pet
-execute if score admin mobs_anger_cats matches 1.. as @e[type=#real_pet_chatter:noisy_mobs] at @s if entity @e[type=#real_pet_chatter:neutral_or_hostile, tag=real_pet_chatter_hostile, tag=!persistent, distance=..4] run tag @s add angry_pet
+execute if score admin mobs_anger_cats matches 1.. as @e[type=#real_pet_chatter:friendly] at @s if entity @e[type=#real_pet_chatter:neutral_or_hostile, tag=real_pet_chatter_hostile, tag=!persistent, distance=..4] run tag @s add angry_pet
 tag @e[type=cat, tag=angry_pet] add angry_cat
 
 # Mob Anger Sounds

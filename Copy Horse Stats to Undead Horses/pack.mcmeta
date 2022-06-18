@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
+                "pack_format":10,
                 "description": "Copy a newly tamed Horse's stats to a Skeleton or Zombie Horse."
         }
 }

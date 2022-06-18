@@ -19,7 +19,7 @@ execute as @s[tag=!player_far, scores={pet_chatter_time=1}] store result score @
 execute as @s[tag=!player_far, scores={pet_chatter_time=1..}] run scoreboard players remove @s pet_chatter_time 1
 
 # Set chatter time to limit when their is a threat (except cats)
-execute as @s[type=#real_pet_chatter:noisy_mobs, type=!cat, tag=angry_pet] run scoreboard players operation @s pet_chatter_time = @s pet_chatter_limit
+execute as @s[type=#real_pet_chatter:friendly, type=!cat, tag=angry_pet] run scoreboard players operation @s pet_chatter_time = @s pet_chatter_limit
 
 # Set cat chatter time to 0, so they only growl, hiss, or yell (it doesn't sound right when they give a friendly meow to a threat)
 execute as @s[type=cat, tag=angry_pet] run loot spawn ~ -128 ~ loot real_pet_chatter:rand_pet_chatter

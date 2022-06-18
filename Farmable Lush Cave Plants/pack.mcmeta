@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
+                "pack_format":10,
                 "description": "2 New Recipes: Bonemeal, Moss Block, and Clay into 4 Small Dripleaves; Spore Blossom and 4 Bonemeal into 2 Spore Blossoms"
         }
 }

@@ -1,6 +1,6 @@
 {
     "pack": {
-        "pack_format": 8,
+        "pack_format":10,
         "description": "Transform Pillagers into Illusioners by hitting them with Dragon's Breath."
     }
 }

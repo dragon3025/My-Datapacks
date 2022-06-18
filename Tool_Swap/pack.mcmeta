@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
+                "pack_format":10,
                 "description": "Swap item selected/hotbar with top row of inventory/Ender Chest. Rotate selected with 1st 3 slots of Ender Chest"
         }
 }

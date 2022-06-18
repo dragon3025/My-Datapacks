@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 8,
+                "pack_format":10,
                 "description": "Craft Light Blocks (the lightbulb textured item). Reveal them in Survival by holding a Lightblock."
         }
 }
