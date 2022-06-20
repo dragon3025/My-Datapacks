@@ -1,4 +1,7 @@
 schedule function end_gateway_placer:second 1s
 
-# End Gateway Placer
-execute as @e[predicate=end_gateway_placer:gateway] at @s if block ~ ~ ~ #end_gateway_placer:air run function end_gateway_placer:gateway_placer
+scoreboard players enable @a place_gateway
+scoreboard players enable @a remove_gateway
+
+execute as @a[scores={place_gateway=1..}] at @s run function end_gateway_placer:place_gateway
+execute as @a[scores={remove_gateway=1..}] at @s run function end_gateway_placer:remove_gateway

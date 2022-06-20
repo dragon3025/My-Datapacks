@@ -1,0 +1,6 @@
+{
+	"values": [
+		"no_death_loot_despawn:setup",
+		"no_death_loot_despawn:tick"
+	]
+}

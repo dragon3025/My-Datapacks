@@ -1,5 +1,6 @@
 {
 	"values": [
+		"end_gateway_placer:setup",
 		"end_gateway_placer:second"
 	]
 }
