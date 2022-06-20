@@ -30,10 +30,12 @@
 		"minecraft:glowstone",
 		"minecraft:honey_block",
 		"minecraft:honeycomb_block",
+		"minecraft:frogspawn",
 		"minecraft:kelp",
 		"minecraft:lever",
 		"minecraft:light",
 		"minecraft:nether_sprouts",
+		"minecraft:pearlescent_froglight",
 		"minecraft:player_head",
 		"minecraft:redstone_lamp",
 		"minecraft:redstone_wire",
@@ -42,6 +44,7 @@
 		"minecraft:sea_pickle",
 		"minecraft:slime_block",
 		"minecraft:tripwire_hook",
+		"minecraft:verdant_froglight",
 		"minecraft:zombie_head"
 	]
 }
