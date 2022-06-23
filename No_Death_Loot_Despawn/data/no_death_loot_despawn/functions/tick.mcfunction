@@ -10,4 +10,4 @@ scoreboard players set dummy death_item_count 0
 execute as @e[type=item, tag=death_item] run scoreboard players add dummy death_item_count 1
 
 ## Prevent Death Items from Despawning if amount is < 500
-execute unless score dummy death_item_count matches 500.. as @e[type=item, tag=death_item] run function our_server:death_item
+execute unless score dummy death_item_count matches 500.. as @e[type=item, tag=death_item] run function no_death_loot_despawn:death_item
