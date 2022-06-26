@@ -1,0 +1,7 @@
+{
+	"values": [
+		"watchman:setup",
+		"watchman:second",
+		"watchman:10_seconds"
+	]
+}

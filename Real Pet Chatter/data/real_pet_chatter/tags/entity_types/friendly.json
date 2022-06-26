@@ -1,9 +1,11 @@
 {
   "replace": false,
   "values": [
+    "minecraft:allay",
     "minecraft:strider",
     "minecraft:polar_bear",
     "minecraft:fox",
+    "minecraft:frog",
     "minecraft:bat",
     "minecraft:cat",
     "minecraft:chicken",

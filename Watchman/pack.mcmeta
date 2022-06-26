@@ -1,0 +1,6 @@
+{
+        "pack": {
+                "pack_format":10,
+                "description": "The wait time after curing a Zombie Villager is now 1 second or less."
+        }
+}

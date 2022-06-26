@@ -1,0 +1,3 @@
+schedule clear fast_villager_curing:second
+
+scoreboard objectives remove zombie_villager_conversion_time
