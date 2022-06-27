@@ -1,7 +1,0 @@
-{
-	"values": [
-		"watchman:setup",
-		"watchman:second",
-		"hostile_status:10_seconds"
-	]
-}
