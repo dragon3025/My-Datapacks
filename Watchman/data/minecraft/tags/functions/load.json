@@ -2,6 +2,6 @@
 	"values": [
 		"watchman:setup",
 		"watchman:second",
-		"watchman:10_seconds"
+		"hostile_status:10_seconds"
 	]
 }

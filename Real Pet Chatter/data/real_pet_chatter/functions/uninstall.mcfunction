@@ -7,7 +7,7 @@ execute as @e[type=#real_pet_chatter:noisy_mobs, tag=chatting_mob_v2] run data m
 
 tag @e remove chatting_mob_v2
 tag @e remove persistent
-tag @e remove real_pet_chatter_hostile
+tag @e remove hostile
 tag @e remove angry_pet
 tag @e remove angry_cat
 

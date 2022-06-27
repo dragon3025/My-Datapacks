@@ -1,3 +1,5 @@
 schedule clear copy_horse_stats:second
 
 scoreboard objectives remove copy_horse_stats_timer
+
+function horse_tame_message:uninstall
