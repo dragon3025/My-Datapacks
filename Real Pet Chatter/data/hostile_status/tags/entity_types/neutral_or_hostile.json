@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "#hostile_status:hostile",
+        "minecraft:zombified_piglin",
+        "minecraft:spider",
+        "minecraft:cave_spider"
+    ]
+}

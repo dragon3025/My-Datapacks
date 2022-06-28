@@ -1,0 +1,9 @@
+{
+	"values": [
+		"real_pet_chatter:setup",
+		"real_pet_chatter:tick",
+		"real_pet_chatter:second",
+		"real_pet_chatter:10_seconds",
+		"hostile_status:10_seconds"
+	]
+}

@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:raiders",
+        "#minecraft:skeletons",
+        "minecraft:blaze",
+        "minecraft:creeper",
+        "minecraft:drowned",
+        "minecraft:enderman",
+        "minecraft:ghast",
+        "minecraft:guardian",
+        "minecraft:hoglin",
+        "minecraft:husk",
+        "minecraft:magma_cube",
+        "minecraft:phantom",
+        "minecraft:piglin",
+        "minecraft:piglin_brute",
+        "minecraft:slime",
+        "minecraft:warden",
+        "minecraft:witch",
+        "minecraft:zombie",
+        "minecraft:zombie_villager"
+    ]
+}
