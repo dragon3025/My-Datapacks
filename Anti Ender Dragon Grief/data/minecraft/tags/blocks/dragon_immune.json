@@ -26,8 +26,10 @@
 		"minecraft:cobweb",
 		"minecraft:comparator",
 		"minecraft:creeper_head",
+		"minecraft:creeper_wall_head",
 		"minecraft:dragon_egg",
 		"minecraft:dragon_head",
+		"minecraft:dragon_wall_head",
 		"minecraft:glowstone",
 		"minecraft:honey_block",
 		"minecraft:honeycomb_block",
@@ -38,14 +40,20 @@
 		"minecraft:nether_sprouts",
 		"minecraft:pearlescent_froglight",
 		"minecraft:player_head",
+		"minecraft:player_wall_head",
 		"minecraft:redstone_lamp",
 		"minecraft:redstone_wire",
 		"minecraft:repeater",
 		"minecraft:sea_lantern",
 		"minecraft:sea_pickle",
+		"minecraft:skeleton_skull",
+		"minecraft:skeleton_wall_skull",
 		"minecraft:slime_block",
 		"minecraft:tripwire_hook",
 		"minecraft:verdant_froglight",
-		"minecraft:zombie_head"
+		"minecraft:wither_skeleton_skull",
+		"minecraft:wither_skeleton_wall_skull",
+		"minecraft:zombie_head",
+		"minecraft:zombie_wall_head"
 	]
 }
