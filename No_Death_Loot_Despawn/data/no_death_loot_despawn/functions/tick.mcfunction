@@ -1,4 +1,4 @@
-schedule function no_death_loot:tick 1t
+schedule function no_death_loot_despawn:tick 1t
 
 # No Despawning Death Items
 ## Set Items as Death Items
