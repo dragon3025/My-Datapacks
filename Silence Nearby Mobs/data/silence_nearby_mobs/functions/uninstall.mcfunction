@@ -1,4 +1,6 @@
-schedule clear silence_nearby_mobs:second
+schedule clear silence_nearby_mobs:tick
 
 scoreboard objectives remove silence
 scoreboard objectives remove unsilence
+scoreboard objectives remove set_silence_immune
+scoreboard objectives remove unset_silence_immune

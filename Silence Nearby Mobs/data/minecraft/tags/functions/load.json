@@ -1,7 +1,6 @@
 {
   "values": [
     "silence_nearby_mobs:setup",
-    "silence_nearby_mobs:tick",
-    "silence_nearby_mobs:second"
+    "silence_nearby_mobs:tick"
   ]
 }
