@@ -13,5 +13,8 @@
         [
             "Player Hurt Entity"
         ]
-    ]
+    ],
+    "rewards": {
+        "function": "zombify_horse:zombify_horse"
+    }
 }

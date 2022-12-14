@@ -13,5 +13,8 @@
         [
             "Player Hurt Entity"
         ]
-    ]
+    ],
+    "rewards": {
+        "function": "illusioner_transformation:hurt_pillager"
+    }
 }
