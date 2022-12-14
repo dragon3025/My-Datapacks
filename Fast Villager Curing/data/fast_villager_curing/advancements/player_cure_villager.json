@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "Player Cure Zombie Villager": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:golden_apple"
+                    ]
+                },
+                "entity": {
+                    "type": "minecraft:zombie_villager"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "Player Cure Zombie Villager"
+        ]
+    ],
+    "rewards": {
+        "function": "fast_villager_curing:cure"
+    }
+}
