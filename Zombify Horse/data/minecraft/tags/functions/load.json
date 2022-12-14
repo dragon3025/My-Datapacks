@@ -1,5 +1,6 @@
 {
 	"values": [
-		"zombify_horse:second"
+		"zombify_horse:setup",
+		"zombify_horse:tick"
 	]
 }

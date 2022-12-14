@@ -1,3 +1,4 @@
 schedule clear zombify_horse:second
 
-function horse_tame_message:uninstall
+scoreboard objectives remove zombify_horse_skeleton_horse_detection
+scoreboard objectives remove hurt_time
