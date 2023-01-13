@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
+		"#minecraft:all_signs",
 		"#minecraft:beds",
 		"#minecraft:candle_cakes",
 		"#minecraft:crops",
@@ -19,7 +20,6 @@
 		"#minecraft:wall_post_override",
 		"#minecraft:wither_immune",
 		"#minecraft:wool",
-		"#minecraft:wool_carpets",
 		"minecraft:beacon",
 		"minecraft:bubble_column",
 		"minecraft:cake",
@@ -38,7 +38,6 @@
 		"minecraft:kelp",
 		"minecraft:lever",
 		"minecraft:light",
-		"minecraft:nether_sprouts",
 		"minecraft:pearlescent_froglight",
 		"minecraft:player_head",
 		"minecraft:player_wall_head",
