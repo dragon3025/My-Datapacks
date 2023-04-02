@@ -1,4 +1,3 @@
-execute if entity @p[nbt={RootVehicle:{Entity:{Tags:[chair]}}}, distance=..1] run tag @s add activated_seat
-
-execute as @s[tag=activated_seat] unless entity @p[nbt={RootVehicle:{Entity:{Tags:[chair]}}}, distance=..1] run function take_a_seat:despawn_chair
-execute as @s[tag=!activated_seat] unless entity @p[distance=..2] run function take_a_seat:despawn_chair
+execute on passengers on vehicle run tag @s add passenger_still_in_chair
+execute as @s[tag=!passenger_still_in_chair] run function take_a_seat:despawn_chair
+tag @s remove passenger_still_in_chair

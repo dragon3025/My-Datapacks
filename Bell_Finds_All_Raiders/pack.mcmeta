@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format":10,
+                "pack_format":11,
                 "description": "When hitting a bell, all Raiders will have the glowing effect."
         }
 }

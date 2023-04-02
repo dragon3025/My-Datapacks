@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format":10,
+                "pack_format":11,
                 "description": "Silence Mobs that are close to Item Frames with named Name Tags or use a trigger command."
         }
 }
