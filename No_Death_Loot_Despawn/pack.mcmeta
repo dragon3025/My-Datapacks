@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format":11,
+                "pack_format":15,
                 "description": "Keeps at least 500 death loot item entities alive."
         }
 }

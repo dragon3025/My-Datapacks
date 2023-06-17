@@ -1,17 +1,17 @@
-execute positioned ~ ~ ~-8 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-7 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-6 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-5 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-4 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-3 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-2 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~-1 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~ if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~1 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~2 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~3 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~4 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~5 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~6 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~7 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
-execute positioned ~ ~ ~8 if block ~ ~ ~ light run summon area_effect_cloud ~0.5 ~0.5 ~0.5 {Duration:1, Tags:["light_block"]}
+execute positioned ~ ~ ~-8 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-7 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-6 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-5 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-4 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-3 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-2 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~-1 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~ if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~1 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~2 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~3 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~4 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~5 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~6 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~7 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
+execute positioned ~ ~ ~8 if block ~ ~ ~ light run function light_block_craft_and_find:light_marker
