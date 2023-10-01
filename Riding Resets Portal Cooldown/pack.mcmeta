@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format":15,
+                "pack_format":16,
                 "description": "Riding a mob resets their portal cooldown."
         }
 }
