@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: "[minecraft_version] [datapack]"
-labels: bug
+labels: bug, enhancement
 assignees: ''
 
 ---
