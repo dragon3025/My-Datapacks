@@ -1,3 +1,3 @@
 # My-Datapacks
 A repository of my datapacks, feel free to fork and make changes.
-Planet Minecraft Page: https://www.planetminecraft.com/member/dragon3025/
+Datapacks are found at Modrinth: https://modrinth.com/user/dragon3025
