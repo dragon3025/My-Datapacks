@@ -1,1 +1,1 @@
-kill @e[tag=death_item]
+$kill @e[tag=death_item, limit=$(amount), sort=nearest]
