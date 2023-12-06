@@ -1,6 +1,10 @@
 {
         "pack": {
-                "pack_format":16,
+                "pack_format": 16,
+                "supported_formats": {
+                        "min_inclusive": 16,
+                        "max_inclusive": 26
+                },
                 "description": "§cOptional: disable until 1st kill§7. Works w/ Anti-Enderman Grief."
         }
 }

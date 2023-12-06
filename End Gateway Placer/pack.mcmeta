@@ -1,6 +1,10 @@
 {
         "pack": {
-                "pack_format":16,
+                "pack_format": 16,
+                "supported_formats": {
+                        "min_inclusive": 16,
+                        "max_inclusive": 26
+                },
                 "description": "Use Dragon's Breath to place/remove End Gateways (except in The End)."
         }
 }
