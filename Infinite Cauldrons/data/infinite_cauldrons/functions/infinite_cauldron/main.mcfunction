@@ -1,3 +1,2 @@
-execute unless block ~ ~ ~ water_cauldron unless block ~ ~ ~ cauldron run tag @s add kill_infinite_cauldron
-execute as @s[tag=!kill_infinite_cauldron] run function infinite_cauldrons:infinite_cauldron/refresh
-execute as @s[tag=kill_infinite_cauldron] run function infinite_cauldrons:infinite_cauldron/remove
+execute unless block ~ ~ ~ water_cauldron unless block ~ ~ ~ cauldron run return run function infinite_cauldrons:infinite_cauldron/remove
+function infinite_cauldrons:infinite_cauldron/refresh
