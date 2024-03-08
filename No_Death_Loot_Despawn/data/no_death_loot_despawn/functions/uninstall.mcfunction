@@ -5,3 +5,5 @@ scoreboard objectives remove death_item_x
 scoreboard objectives remove death_item_y
 scoreboard objectives remove death_item_z
 scoreboard objectives remove death_item_count
+
+tag @e remove death_item
