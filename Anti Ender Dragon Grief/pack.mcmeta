@@ -1,10 +1,10 @@
 {
         "pack": {
-                "pack_format": 34,
+                "pack_format": 35,
                 "supported_formats": {
                         "min_inclusive": 16,
-                        "max_inclusive": 34
+                        "max_inclusive": 35
                 },
-                "description": "§cOptional: disable until 1st kill§7. Works w/ Anti-Enderman Grief."
+                "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }

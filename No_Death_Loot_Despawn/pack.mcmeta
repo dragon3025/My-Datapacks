@@ -1,10 +1,10 @@
 {
         "pack": {
-                "pack_format": 34,
+                "pack_format": 35,
                 "supported_formats": {
                         "min_inclusive": 16,
-                        "max_inclusive": 34
+                        "max_inclusive": 35
                 },
-                "description": "Keeps at least 500 death loot item entities alive."
+                "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }

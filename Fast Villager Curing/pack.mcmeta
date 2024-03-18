@@ -1,10 +1,10 @@
 {
         "pack": {
-                "pack_format": 34,
+                "pack_format": 35,
                 "supported_formats": {
                         "min_inclusive": 16,
-                        "max_inclusive": 34
+                        "max_inclusive": 35
                 },
-                "description": "The wait time after curing a Zombie Villager is now 1 second or less."
+                "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }

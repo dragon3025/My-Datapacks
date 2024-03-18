@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 34,
-                "description": "Turn Clay/Slime blocks back into ball form."
+                "pack_format": 35,
+                "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }
