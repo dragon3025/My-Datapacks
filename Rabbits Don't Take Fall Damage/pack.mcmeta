@@ -1,10 +1,10 @@
 {
         "pack": {
-                "pack_format": 26,
+                "pack_format": 41,
                 "supported_formats": {
                         "min_inclusive": 16,
-                        "max_inclusive": 26
+                        "max_inclusive": 41
                 },
-                "description": "Prevents Rabbits taking fall damage."
+                "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }
