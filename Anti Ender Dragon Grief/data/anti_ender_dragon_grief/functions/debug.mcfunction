@@ -1,2 +1,4 @@
-execute as @p[tag=debugging_anti_end_dragon_greif] run schedule function anti_ender_dragon_grief:debug 1t
-execute as @p[tag=debugging_anti_end_dragon_greif] at @s run fill ~-45 70 ~-45 ~45 70 ~45 lime_wool replace #dragon_immune
+schedule function anti_ender_dragon_grief:debug_stuff/debug_x 1t
+
+execute as @s[y=-400,dy=460] run tp @s ~ 125 ~
+gamerule maxCommandChainLength 100000
