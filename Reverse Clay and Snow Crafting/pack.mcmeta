@@ -1,9 +1,9 @@
 {
         "pack": {
-                "pack_format": 42,
+                "pack_format": 44,
                 "supported_formats": {
                         "min_inclusive": 35,
-                        "max_inclusive": 42
+                        "max_inclusive": 44
                 },
                 "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
