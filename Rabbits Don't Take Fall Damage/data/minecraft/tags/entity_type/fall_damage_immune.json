@@ -15,6 +15,7 @@
     "minecraft:ocelot",
     "minecraft:parrot",
     "minecraft:rabbit",
-    "minecraft:wither"
+    "minecraft:wither",
+	"minecraft:breeze"
   ]
 }
