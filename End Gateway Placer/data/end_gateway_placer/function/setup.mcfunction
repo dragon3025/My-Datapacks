@@ -1,2 +1,1 @@
-scoreboard objectives add place_gateway trigger "Place Gateway"
-scoreboard objectives add remove_gateway trigger "Remove Gateway"
+scoreboard objectives add toggle_decorative_gateway minecraft.used:minecraft.carrot_on_a_stick "Toggle Decorative Gateway"

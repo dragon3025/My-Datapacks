@@ -1,6 +1,7 @@
 {
 	"values": [
 		"end_gateway_placer:setup",
-		"end_gateway_placer:second"
+		"end_gateway_placer:2_second",
+		"end_gateway_placer:tick"
 	]
 }

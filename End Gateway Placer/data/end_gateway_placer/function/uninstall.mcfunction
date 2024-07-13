@@ -1,4 +1,4 @@
-schedule clear end_gateway_placer:second
+schedule clear end_gateway_placer:tick
+schedule clear end_gateway_placer:2_second
 
-scoreboard objectives remove place_gateway
-scoreboard objectives remove remove_gateway
+scoreboard objectives remove toggle_decorative_gateway
