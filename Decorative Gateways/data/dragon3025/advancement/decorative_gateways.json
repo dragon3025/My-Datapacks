@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:player_head",
+			"components": {
+				"minecraft:profile": {
+					"properties": [
+						{
+							"name": "textures",
+							"value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTYzOWQ0MDc5ZDZiN2MwYTkxM2NmZjYwOGVjNDNmYTM5YTcyZmNhNWQ2NGZiMjI3MDBiMWNjNmM0NmNjNjljMiJ9fX0="
+						}
+					]
+				}
+			}
+		},
+		"title": "Decorative Gateways",
+		"description": [
+			"",
+			{
+				"text": "Rename a Carrot on a Stick to "
+			},
+			{
+				"text": "deco_gateway",
+				"color": "aqua"
+			},
+			{
+				"text": " to get the Decorative Gateway Tool. This will allow you to place or remove non-functional decorative End Gateways.\n\nPlacing cost 1 Ender Pearl and requires the Remote Getaway Advancement."
+			}
+		],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "dragon3025:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

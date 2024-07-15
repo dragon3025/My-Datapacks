@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		{
+			"item": "minecraft:carrot_on_a_stick"
+		},
+		{
+			"item": "minecraft:chorus_fruit"
+		}
+	],
+	"result": {
+		"id": "minecraft:carrot_on_a_stick",
+		"components": {
+			"minecraft:custom_name": "\"Decorative Gateway Tool\"",
+			"minecraft:lore": [
+				"\"Use to place or remove decorative End Gateways\""
+			]
+		}
+	}
+}

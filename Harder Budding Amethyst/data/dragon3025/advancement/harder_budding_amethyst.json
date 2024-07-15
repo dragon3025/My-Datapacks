@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:budding_amethyst"
+		},
+		"title": "Harder Budding Amethyst",
+		"description": [
+			"",
+			{
+				"text": "Budding Amethyst will break a lot slower, which helps prevent accidentally mining."
+			}
+		],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "dragon3025:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

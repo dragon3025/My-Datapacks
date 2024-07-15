@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:bell"
+		},
+		"title": "Bell Finds All Raiders",
+		"description": [
+			"",
+			{
+				"text": "When you ring a Bell, all Raiders are highlighted, instead of only nearby Raiders (which is useful when a Raider falls underground)."
+			}
+		],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "dragon3025:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}
