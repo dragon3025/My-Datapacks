@@ -1,0 +1,25 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_chorus_fruit": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:chorus_fruit"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_chorus_fruit"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"end_gateway_placer:decorative_gateway_tool"
+		]
+	}
+}

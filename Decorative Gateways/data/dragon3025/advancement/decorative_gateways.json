@@ -17,14 +17,14 @@
 		"description": [
 			"",
 			{
-				"text": "Rename a Carrot on a Stick to "
+				"text": "Craft the "
 			},
 			{
-				"text": "deco_gateway",
+				"text": "Decorative Gateway Tool",
 				"color": "aqua"
 			},
 			{
-				"text": " to get the Decorative Gateway Tool. This will allow you to place or remove non-functional decorative End Gateways.\n\nPlacing cost 1 Ender Pearl and requires the Remote Getaway Advancement."
+				"text": " with Carrot on a Stick and Chorus Fruit. This will allow you to place or remove non-functional decorative End Gateways.\n\nPlacing cost 1 Ender Pearl."
 			}
 		],
 		"show_toast": false,

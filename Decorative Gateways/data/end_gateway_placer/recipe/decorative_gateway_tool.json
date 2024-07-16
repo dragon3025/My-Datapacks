@@ -15,7 +15,8 @@
 			"minecraft:custom_name": "\"Decorative Gateway Tool\"",
 			"minecraft:lore": [
 				"\"Use to place or remove decorative End Gateways\""
-			]
+			],
+			"minecraft:enchantment_glint_override": true
 		}
 	}
 }
