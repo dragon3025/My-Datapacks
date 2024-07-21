@@ -1,0 +1,46 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:player_head",
+			"components": {
+				"minecraft:profile": {
+					"properties": [
+						{
+							"name": "textures",
+							"value": "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWJhODAyMzVhM2IxYTM2NzJhMTdkN2FlNTI0NGZjZGEyMmZlZGY3NzFiMGMyZTUyNWQ2MmFiMmU2ZmY5NDdhMSJ9fX0="
+						}
+					]
+				}
+			}
+		},
+		"title": "World Datapack",
+		"description": [
+			"",
+			{
+				"text": "Use "
+			},
+			{
+				"text": "/trigger item_count_simplified set #",
+				"color": "aqua"
+			},
+			{
+				"text": " to see an item amount in the form of Double Chest, Stacks, + Items (assuming a stack is 64 items).\n\nUse "
+			},
+			{
+				"text": "/trigger store_player ",
+				"color": "aqua"
+			},
+			{
+				"text": "to save your Experience, Inventory, and Ender Chest into your current location.\n\nThe Stone Cutter can turn Paintings into specific vanilla Paintings."
+			}
+		],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "dragon3025:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

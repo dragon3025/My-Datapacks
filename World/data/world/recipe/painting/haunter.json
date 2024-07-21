@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"wss",
+		"sss",
+		"sss"
+	],
+	"key": {
+		"w": {
+			"tag": "minecraft:wool"
+		},
+		"s": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"id": "minecraft:painting",
+		"components": {
+			"minecraft:entity_data": {
+				"id": "minecraft:painting",
+				"variant": "world:haunter"
+			},
+			"minecraft:custom_model_data": 1
+		}
+	}
+}
