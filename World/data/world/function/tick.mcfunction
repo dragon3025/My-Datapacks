@@ -1,7 +1,7 @@
 schedule function world:tick 1t
 
-scoreboard players add @a store_player_id 0
-execute as @a[scores={store_player_id=0}] run function world:store_player/get_id
+scoreboard players add @a world_datapack_player_id 0
+execute as @a[scores={world_datapack_player_id=0}] run function world:store_player/get_id
 
 execute as @a[scores={item_count_simplified_1=1..}] run function world:item_count_simplified/stack_size_1
 execute as @a[scores={item_count_simplified_16=1..}] run function world:item_count_simplified/stack_size_16

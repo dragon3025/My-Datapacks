@@ -21,7 +21,7 @@ setblock ~ ~ ~ air
 # Interaction with Marker
 summon interaction ~ ~ ~ {Tags:[store_player_storage], Passengers:[{id:"minecraft:marker", Tags:[store_player_storage, new_store_player_storage]}]}
 
-scoreboard players operation @n[type=marker, tag=new_store_player_storage] store_player_id = @s store_player_id
+scoreboard players operation @n[type=marker, tag=new_store_player_storage] world_datapack_player_id = @s world_datapack_player_id
 
 data modify entity @n[type=marker, tag=new_store_player_storage] data.Inventory set from entity @s Inventory
 data modify entity @n[type=marker, tag=new_store_player_storage] data.EnderItems set from entity @s EnderItems

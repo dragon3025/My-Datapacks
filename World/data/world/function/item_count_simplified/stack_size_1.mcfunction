@@ -1,17 +1,17 @@
-scoreboard players operation @s calc_double_chest = @s item_count_simplified_1
+scoreboard players operation #calc_double_chest temp = @s item_count_simplified_1
 scoreboard players set @s item_count_simplified_1 0
 
-scoreboard players set @s calc_denominator 54
+scoreboard players set #calc_denominator temp 54
 
-scoreboard players operation @s calc_item_remainder = @s calc_double_chest
-scoreboard players operation @s calc_item_remainder %= @s calc_denominator
+scoreboard players operation #calc_item_remainder temp = #calc_double_chest temp
+scoreboard players operation #calc_item_remainder temp %= #calc_denominator temp
 
-scoreboard players operation @s calc_double_chest /= @s calc_denominator
+scoreboard players operation #calc_double_chest temp /= #calc_denominator temp
 
-execute unless entity @s[scores={calc_double_chest=1}] run data merge storage world:data {calc_chest_text:" chests "}
-execute unless entity @s[scores={calc_item_remainder=1}] run data merge storage world:data {calc_item_text:" items"}
+execute unless score #calc_double_chest temp matches 1 run data merge storage world:data {calc_chest_text:" chests "}
+execute unless score #calc_item_remainder temp matches 1 run data merge storage world:data {calc_item_text:" items"}
 
-execute as @s[scores={calc_double_chest=1}] run data merge storage world:data {calc_chest_text:" chest "}
-execute as @s[scores={calc_item_remainder=1}] run data merge storage world:data {calc_item_text:" item"}
+execute if score #calc_double_chest temp matches 1 run data merge storage world:data {calc_chest_text:" chest "}
+execute if score #calc_item_remainder temp matches 1 run data merge storage world:data {calc_item_text:" item"}
 
-tellraw @s ["",{"score":{"name":"@s","objective":"calc_double_chest"}},{"color": "yellow","storage":"world:data","nbt": "calc_chest_text"},{"text": "and "},{"score":{"name":"@s","objective":"calc_item_remainder"}},{"color": "yellow","storage":"world:data","nbt": "calc_item_text"}]
+tellraw @s ["",{"score":{"name":"#calc_double_chest","objective":"temp"}},{"color": "yellow","storage":"world:data","nbt": "calc_chest_text"},{"text": "and "},{"score":{"name":"#calc_item_remainder","objective":"temp"}},{"color": "yellow","storage":"world:data","nbt": "calc_item_text"}]
