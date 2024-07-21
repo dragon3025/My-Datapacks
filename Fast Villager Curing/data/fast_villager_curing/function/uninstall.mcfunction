@@ -1,1 +1,1 @@
-scoreboard objectives remove zombie_villager_conversion_time
+scoreboard objectives remove temp

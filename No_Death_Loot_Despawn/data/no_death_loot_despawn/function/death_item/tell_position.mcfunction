@@ -1,5 +1,5 @@
-execute store result score @s death_item_x run data get entity @s Pos[0]
-execute store result score @s death_item_y run data get entity @s Pos[1]
-execute store result score @s death_item_z run data get entity @s Pos[2]
-execute store result score @s death_item_count run data get entity @s Item.Count
-tellraw @a [{"selector":"@s"},{"text":"×"},{"score":{"name":"@s","objective":"death_item_count"}},{"text":": My Position is X:"},{"score":{"name":"@s","objective":"death_item_x"}},{"text":" Y:"},{"score":{"name":"@s","objective":"death_item_y"}},{"text":" Z:"},{"score":{"name":"@s","objective":"death_item_z"}}]
+execute store result score #death_item_x temp run data get entity @s Pos[0]
+execute store result score #death_item_y temp run data get entity @s Pos[1]
+execute store result score #death_item_z temp run data get entity @s Pos[2]
+execute store result score #death_item_count temp run data get entity @s Item.count
+tellraw @a [{"selector":"@s"},{"text":" ×"},{"score":{"name":"#death_item_count","objective":"temp"}},{"text": ": "},{"color": "yellow","text":"My Position is X:"},{"color": "yellow","score":{"name":"#death_item_x","objective":"temp"}},{"color": "yellow","text":" Y:"},{"color": "yellow","score":{"name":"#death_item_y","objective":"temp"}},{"color": "yellow","text":" Z:"},{"color": "yellow","score":{"name":"death_item_z","objective":"temp"}}]
