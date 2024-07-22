@@ -14,3 +14,5 @@ scoreboard players enable @a item_count_simplified_16
 scoreboard players enable @a item_count_simplified_1
 
 scoreboard players enable @a store_player
+
+execute if entity @p[tag=find_world_spawn] run particle dust{color:[1, 0, 0], scale:1} ~0.5 64 ~0.5 0.01 20 0.01 1 40 force

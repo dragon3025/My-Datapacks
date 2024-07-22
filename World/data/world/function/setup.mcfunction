@@ -22,3 +22,5 @@ scoreboard objectives add world_datapack_player_id dummy "Player ID"
 scoreboard players add admin world_datapack_player_id 0
 
 scoreboard objectives add temp dummy "Temporary"
+
+scoreboard objectives add left_game custom:minecraft.leave_game "Left Game"
