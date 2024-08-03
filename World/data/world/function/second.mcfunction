@@ -7,6 +7,6 @@ execute if entity @n[type=!player, type=!#immune_to_oozing, nbt={active_effects:
 execute if score admin nerf_oozing_timer matches 1.. run execute as @e[type=slime, tag=!oozing_nerfed] run function world:nerf_oozing
 scoreboard players remove admin nerf_oozing_timer 1
 
-execute as @a unless score @s left_game matches 0 run tellraw @s [{"color": "yellow", "text": "Is this you? If not, then use "},{"color": "aqua", "text": "/trigger store_player", "clickEvent": {"action": "run_command", "value": "/trigger store_player"}}, {"color": "yellow", "text": ". Then, use Journeymap's Waypoints to give the other player a return point, then teleport to the right location. Don't forget to use a bed when you arrive.\n\nUse Advancements for datapack info. World info: "},{"color": "aqua", "text": "link", "clickEvent": {"action": "open_url", "value": "ADD URL HERE!!!"}}]
+execute as @a unless score @s left_game matches 0 run tellraw @s [{"color": "yellow", "text": "You can store your player with "},{"color": "aqua", "text": "/trigger store_player", "clickEvent": {"action": "run_command", "value": "/trigger store_player"}}, {"color": "yellow", "text": ". You can also use Journeymap's Waypoints.\n\nUse Advancements for datapack info. World info: "},{"color": "aqua", "text": "link", "clickEvent": {"action": "open_url", "value": "ADD URL HERE!!!"}}]
 
 execute as @a unless score @s left_game matches 0 run scoreboard players set @s left_game 0

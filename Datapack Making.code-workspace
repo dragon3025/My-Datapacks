@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../../resourcepacks"
+		},
+		{
+			"path": "../../../../../Survival 1.21/.minecraft/saves/Survival/resources_editing"
 		}
 	],
 	"settings": {}
