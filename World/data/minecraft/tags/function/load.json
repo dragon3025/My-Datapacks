@@ -1,7 +1,0 @@
-{
-	"values": [
-		"world:setup",
-		"world:second",
-		"world:tick"
-	]
-}
