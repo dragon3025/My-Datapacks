@@ -2,21 +2,32 @@
 	"type": "minecraft:crafting_shapeless",
 	"category": "misc",
 	"ingredients": [
-		{
-			"item": "minecraft:carrot_on_a_stick"
-		},
-		{
-			"item": "minecraft:chorus_fruit"
-		}
+		"minecraft:end_rod",
+		"minecraft:ender_pearl"
 	],
 	"result": {
-		"id": "minecraft:carrot_on_a_stick",
+		"id": "minecraft:stick",
 		"components": {
-			"minecraft:custom_name": "\"Decorative Gateway Tool\"",
+			"minecraft:custom_name": "\"Gateway Placer\"",
 			"minecraft:lore": [
 				"\"Use to place or remove decorative End Gateways\""
 			],
-			"minecraft:enchantment_glint_override": true
+			"minecraft:enchantment_glint_override": true,
+			"minecraft:custom_data": {
+				"gateway_placer": true
+			},
+			"minecraft:custom_model_data": 219427073,
+			"minecraft:consumable": {
+				"consume_seconds": 1000000,
+				"animation": "block",
+				"has_consume_particles": false
+			},
+			"minecraft:food": {
+				"nutrition": 0,
+				"saturation": 0,
+				"can_always_eat": true
+			},
+			"max_stack_size": 1
 		}
 	}
 }

@@ -20,11 +20,11 @@
 				"text": "Craft the "
 			},
 			{
-				"text": "Decorative Gateway Tool",
+				"text": "Gateway Placer",
 				"color": "aqua"
 			},
 			{
-				"text": " with Carrot on a Stick and Chorus Fruit. This will allow you to place or remove non-functional decorative End Gateways.\n\nPlacing cost 1 Ender Pearl."
+				"text": " with an End Rod and Chorus Fruit. This will allow you to place or remove non-functional decorative End Gateways.\n\nPlacing cost 1 Ender Pearl."
 			}
 		],
 		"show_toast": false,
