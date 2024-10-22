@@ -1,12 +1,12 @@
 {
 	"parent": "minecraft:recipes/root",
 	"criteria": {
-		"has_chorus_fruit": {
+		"requirement": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"items": "minecraft:chorus_fruit"
+						"items": "minecraft:end_rod"
 					}
 				]
 			}
@@ -14,7 +14,7 @@
 	},
 	"requirements": [
 		[
-			"has_chorus_fruit"
+			"requirement"
 		]
 	],
 	"rewards": {
