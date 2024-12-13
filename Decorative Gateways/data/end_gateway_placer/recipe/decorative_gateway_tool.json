@@ -16,7 +16,7 @@
 			"minecraft:custom_data": {
 				"gateway_placer": true
 			},
-			"minecraft:custom_model_data": 219427073,
+			"item_model": "decorative_gateways:gateway_placer",
 			"minecraft:consumable": {
 				"consume_seconds": 1000000,
 				"animation": "block",
