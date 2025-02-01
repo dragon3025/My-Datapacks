@@ -1,1 +1,1 @@
-scoreboard players add admin death_item_count 1
+scoreboard players add #admin temp 1
