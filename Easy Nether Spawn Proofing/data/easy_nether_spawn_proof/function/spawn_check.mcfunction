@@ -26,6 +26,7 @@ execute if predicate easy_nether_spawn_proof:biome/warped_forest if block ~ ~-1 
 execute as @s[predicate=easy_nether_spawn_proof:in_fortress] if block ~ ~-1 ~ nether_bricks run return run tag @s add ensp_spawn_check
 execute as @s[predicate=easy_nether_spawn_proof:in_bastion] if block ~ ~-1 ~ #easy_nether_spawn_proof:bastion run return run tag @s add ensp_spawn_check
 
+# Mobs that shouldn't despawn
 execute as @s[nbt={PersistenceRequired:true}] run return run tag @s add ensp_spawn_check
 execute as @s on vehicle on passengers run return run tag @s add ensp_spawn_check
 execute as @s[type=enderman] if data entity @s carriedBlockState run return run tag @s add ensp_spawn_check
