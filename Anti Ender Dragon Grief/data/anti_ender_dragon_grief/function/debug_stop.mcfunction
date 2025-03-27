@@ -1,0 +1,1 @@
+schedule clear anti_ender_dragon_grief:debug_stuff/debug_x
