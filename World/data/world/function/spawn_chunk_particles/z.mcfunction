@@ -1,0 +1,2 @@
+execute positioned ~ ~ ~ positioned over motion_blocking run particle dust{color:[0, 1, 1], scale:1} ~ ~ ~ 0.01 0.01 0.01 1 1 force
+execute positioned ~ ~ ~20 positioned over motion_blocking run particle dust{color:[0, 1, 1], scale:1} ~ ~ ~ 0.01 0.01 0.01 1 1 force

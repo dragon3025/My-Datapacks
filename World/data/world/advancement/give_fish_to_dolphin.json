@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "player_interacted_with_entity",
+			"conditions": {
+                "entity": {
+                    "type": "dolphin"
+                },
+                "item": {
+                    "items": "#fishes"
+                }
+			}
+		}
+	},
+	"requirements": [
+		[
+			"requirement"
+		]
+	],
+	"rewards": {
+		"function": "world:dolphins_kelp"
+	}
+}

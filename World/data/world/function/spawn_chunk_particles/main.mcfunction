@@ -1,0 +1,45 @@
+execute positioned ~ ~ ~ run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~1 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~2 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~3 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~4 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~5 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~6 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~7 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~8 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~9 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~10 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~11 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~12 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~13 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~14 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~15 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~16 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~17 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~18 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~19 run function world:spawn_chunk_particles/x
+execute positioned ~ ~ ~20 run function world:spawn_chunk_particles/x
+
+execute positioned ~ ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~1 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~2 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~3 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~4 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~5 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~6 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~7 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~8 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~9 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~10 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~11 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~12 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~13 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~14 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~15 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~16 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~17 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~18 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~19 ~ ~ run function world:spawn_chunk_particles/z
+execute positioned ~20 ~ ~ run function world:spawn_chunk_particles/z
+
+execute positioned ~10.5 ~ ~10.5 positioned over motion_blocking run particle dust{color:[1, 0, 0], scale:1} ~ ~10 ~ 0.01 5 0.01 1 20 force
