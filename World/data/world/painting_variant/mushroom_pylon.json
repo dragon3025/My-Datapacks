@@ -1,0 +1,13 @@
+{
+	"title": {
+		"text": "Mushroom Pylon",
+		"color": "yellow"
+	},
+	"author": {
+		"text": "Terraria",
+		"color": "gray"
+	},
+	"asset_id": "world:mushroom_pylon",
+	"height": 2,
+	"width": 2
+}

@@ -1,0 +1,13 @@
+{
+	"title": {
+		"text": "Haunter",
+		"color": "yellow"
+	},
+	"author": {
+		"text": "Pokémon",
+		"color": "gray"
+	},
+	"asset_id": "world:haunter",
+	"height": 1,
+	"width": 1
+}

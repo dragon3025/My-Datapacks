@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "world:world_spawn",
+        "world:dragon_type"
+    ]
+}
