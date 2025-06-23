@@ -1,11 +1,18 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: "[minecraft_version] [datapack]"
-labels: bug, enhancement
+title: "[minecraft_version] [datapack] [datapack version] Issue"
+labels: bug
 assignees: ''
 
 ---
+
+**Version Info**
+* Minecraft Version: 
+* Datapack(s): 
+* Datapack Version(s):
+
+Make sure you're using the correct datapack for the Minecraft version you're on, and that the pack is enabled.
 
 **Describe the bug**
 A clear and concise description of what the bug is.
