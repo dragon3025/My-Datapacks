@@ -1,8 +1,8 @@
 {
         "pack": {
-                "pack_format": 80,
+                "pack_format": 87,
                 "supported_formats": {
-                        "max_inclusive": 80,
+                        "max_inclusive": 87,
                         "min_inclusive": 71
                 },
                 "description": [{"text": "Data Pack + Resource Pack found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
