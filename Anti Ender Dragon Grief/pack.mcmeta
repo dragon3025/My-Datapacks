@@ -1,6 +1,6 @@
 {
         "pack": {
-                "pack_format": 80,
+                "pack_format": 87,
                 "description": [{"text": "Found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }
