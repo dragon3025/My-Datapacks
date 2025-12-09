@@ -1,0 +1,9 @@
+{
+  "feature": "minecraft:pile_melon",
+  "placement": [
+    {
+      "type": "count",
+      "count": 0
+    }
+  ]
+}

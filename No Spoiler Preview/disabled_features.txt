@@ -1,0 +1,41 @@
+=== Structures ===
+
+Ancient Cities
+Buried Treasure
+Desert Pyramids
+End Cities
+Igloos
+Jungle Temples
+Mineshafts
+Nether Fortress
+Bastion Remnants
+Nether Fossils
+Ocean Monuments
+Ocean Ruins
+Pillager Outposts
+Ruined Portals
+Shipwrecks
+Strongholds
+Swamp Huts
+Trial Ruins
+Villages
+Woodland Mansions
+
+=== Placed Features ===
+
+Ores
+Amethyst Geodes
+Desert Wells
+Fossils
+Glowstone Blobs
+Monster Rooms
+Melons
+Pumpkins
+Sugar Cane
+Azalea Trees
+
+=== Other ===
+
+Mob Spawning
+Monster Spawning
+Ore Veins
