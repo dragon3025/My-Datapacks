@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": "white_wool",
+	"result": {
+		"id": "minecraft:painting",
+		"components": {
+			"minecraft:entity_data": {
+				"id": "minecraft:painting",
+				"variant": "world:bubbling_brook_by_bob_ross"
+			},
+			"painting/variant": "world:bubbling_brook_by_bob_ross",
+			"item_model": "world:painting/bubbling_brook_by_bob_ross"
+		}
+	}
+}

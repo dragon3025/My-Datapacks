@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:stonecutting",
+	"ingredient": "white_wool",
+	"result": {
+		"id": "minecraft:painting",
+		"components": {
+			"minecraft:entity_data": {
+				"id": "minecraft:painting",
+				"variant": "world:minecraft_scenery_1_by_evenoteverstorm"
+			},
+			"painting/variant": "world:minecraft_scenery_1_by_evenoteverstorm",
+			"item_model": "world:painting/minecraft_scenery_1_by_evenoteverstorm"
+		}
+	}
+}

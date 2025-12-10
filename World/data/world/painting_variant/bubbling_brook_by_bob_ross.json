@@ -1,0 +1,13 @@
+{
+	"title": {
+		"text": "Bubbling Brook",
+		"color": "yellow"
+	},
+	"author": {
+		"text": "Bob Ross",
+		"color": "gray"
+	},
+	"asset_id": "world:bubbling_brook_by_bob_ross",
+	"width": 3,
+	"height": 2
+}

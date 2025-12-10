@@ -1,0 +1,13 @@
+{
+	"title": {
+		"text": "Evening Seascape",
+		"color": "yellow"
+	},
+	"author": {
+		"text": "Bob Ross",
+		"color": "gray"
+	},
+	"asset_id": "world:evening_seascape_by_bob_ross",
+	"width": 2,
+	"height": 3
+}
