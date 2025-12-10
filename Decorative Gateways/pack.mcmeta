@@ -1,7 +1,7 @@
 {
         "pack": {
                 "min_format": 88,
-                "max_format": 88,
+                "max_format": [94, 1],
                 "description": [{"text": "Data Pack + Resource Pack found at "},{"text": "Modrinth.com\n","color": "#1bd96b"}]
         }
 }
