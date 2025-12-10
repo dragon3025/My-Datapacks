@@ -1,5 +1,5 @@
 gamerule command_block_output false
-gamerule elytra_movement_check true
+gamerule elytra_movement_check false
 gamerule max_block_modifications 1000000
 #vanilla: 32768
 gamerule fire_spread_radius_around_player 0
