@@ -1,1 +1,0 @@
-scoreboard objectives remove unsign_book
