@@ -1,2 +1,2 @@
-gamerule doMobSpawning false
-gamerule spawnMonsters false
+gamerule spawn_mobs‌ false
+gamerule spawn_monsters false

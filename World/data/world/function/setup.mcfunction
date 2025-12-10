@@ -1,10 +1,10 @@
-gamerule commandBlockOutput false
-gamerule disableElytraMovementCheck true
-gamerule commandModificationBlockLimit 1000000
+gamerule command_block_output false
+gamerule elytra_movement_check true
+gamerule max_block_modifications 1000000
 #vanilla: 32768
-gamerule doFireTick false
-gamerule playersSleepingPercentage 0
-gamerule enderPearlsVanishOnDeath false
+gamerule fire_spread_radius_around_player 0
+gamerule players_sleeping_percentage‌ 0
+gamerule ender_pearls_vanish_on_death false
 
 scoreboard objectives add temp dummy "Temporary"
 

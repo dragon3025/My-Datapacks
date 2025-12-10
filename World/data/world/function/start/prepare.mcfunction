@@ -1,5 +1,5 @@
-gamerule doDaylightCycle false
-gamerule doWeatherCycle false
+gamerule advance_time false
+gamerule advance_weather false
 time set 0
 weather clear
 

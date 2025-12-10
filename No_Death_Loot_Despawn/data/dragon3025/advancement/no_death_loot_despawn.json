@@ -10,7 +10,7 @@
 				"text": "This pack will prevent your death loot from despawning.\n\nNote: If gamerule "
 			},
 			{
-				"text": "doImmediateRespawn",
+				"text": "immediate_respawn",
 				"color": "aqua"
 			},
 			{
