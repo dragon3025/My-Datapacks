@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:patch_melon",
+  "feature": "minecraft:melon",
   "placement": [
     {
       "type": "minecraft:rarity_filter",

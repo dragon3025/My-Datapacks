@@ -1,4 +1,4 @@
-time set noon
+time of minecraft:overworld set noon
 gamerule advance_time false
 weather clear
 gamerule random_tick_speed 0

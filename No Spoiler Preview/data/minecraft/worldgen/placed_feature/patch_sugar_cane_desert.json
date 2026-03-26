@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:patch_sugar_cane",
+  "feature": "minecraft:sugar_cane",
   "placement": [
     {
       "type": "minecraft:in_square"
