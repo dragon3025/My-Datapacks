@@ -1,4 +1,5 @@
 gamerule advance_time true
+gamerule advance_weather true
 gamerule random_tick_speed 3
 gamerule water_source_conversion true
 gamerule spawn_mobs true

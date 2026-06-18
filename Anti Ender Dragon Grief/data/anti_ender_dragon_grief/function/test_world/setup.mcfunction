@@ -1,5 +1,6 @@
 time of minecraft:overworld set noon
 gamerule advance_time false
+gamerule advance_weather false
 weather clear
 gamerule random_tick_speed 0
 gamerule water_source_conversion false
