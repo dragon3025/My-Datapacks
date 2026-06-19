@@ -4,7 +4,7 @@
 			"trigger": "player_interacted_with_entity",
 			"conditions": {
                 "entity": {
-                    "type": "dolphin"
+                    "minecraft:entity_type": "dolphin"
                 },
                 "item": {
                     "items": "#fishes"
