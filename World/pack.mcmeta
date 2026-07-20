@@ -1,7 +1,0 @@
-{
-        "pack": {
-                "min_format": [107, 1],
-                "max_format": [107, 1],
-                "description": [{"text": "I use this for my worlds.\n", "color": "yellow"}]
-        }
-}

@@ -1,9 +1,0 @@
-{
-	"values": [
-		"world:setup",
-		"world:tick",
-		"boats_remove_sit:tick",
-		"weather_detector:setup",
-		"weather_detector:tick"
-	]
-}
