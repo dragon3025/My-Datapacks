@@ -1,25 +1,27 @@
 {
-    "criteria": {
-        "Player Cure Zombie Villager": {
-            "trigger": "minecraft:player_interacted_with_entity",
-            "conditions": {
-                "item": {
-                    "items": [
-                        "minecraft:golden_apple"
-                    ]
-                },
-                "entity": {
-                    "minecraft:entity_type": "minecraft:zombie_villager"
-                }
-            }
-        }
-    },
-    "requirements": [
-        [
-            "Player Cure Zombie Villager"
-        ]
-    ],
-    "rewards": {
-        "function": "fast_villager_curing:cure"
-    }
+	"criteria": {
+		"player_cured_villager": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": "minecraft:golden_apple"
+				},
+				"entity": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"minecraft:entity_type": "minecraft:zombie_villager"
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"player_cured_villager"
+		]
+	],
+	"rewards": {
+		"function": "fast_villager_curing:cure"
+	}
 }
